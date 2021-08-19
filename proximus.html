@@ -1,0 +1,2561 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)https://www-uat.proximus.be/login/en/? -->
+<html lang="en" class=" js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface no-generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths"><!--<![endif]--><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript" async="" src="./proximus_files/analytics.js.download"></script><script type="text/javascript" async="" src="./proximus_files/js"></script><script type="text/javascript" async="async" src="./proximus_files/s66920615238342"></script><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style><style></style>
+    <meta name="referrer" content="origin-when-cross-origin">
+
+
+
+
+
+        <script type="text/javascript" async="" src="./proximus_files/recaptcha__en.js.download" crossorigin="anonymous" integrity="sha384-ihgnzvjmxjrHVelu+na6lAkiamNxbvwvK0kfOcjIoHoQRt2yE5B+AD2bMn6jz0Ul"></script><script type="text/javascript">
+			var pxdatalayer = pxdatalayer || [];
+			pxdatalayer
+				.push({
+					page: {
+						id                                                        : 'Login',
+						language                                                  : 'en',
+						site                                                      : 'sso',
+						segment                                                   : 'private',
+						
+						category                                                  : {
+							l1: 'Login',
+							l2: 'Login',
+							l3: 'Login'
+						}
+					}
+				})
+			;
+        </script>
+        <meta name="map" content="language:en,l1:Login,l2:Login,l3:Login,id:Login">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <script type="text/javascript" src="./proximus_files/ruxitagentjs_ICA2SVdfgjqru_10221210805073954.js.download" data-dtconfig="app=22cde78d6f3b6b10|agentId=a4e621391b65abf7|rcdec=1209600000|featureHash=ICA2SVdfgjqru|vcv=2|rdnt=1|uxrgce=1|bp=2|srmcrv=10|cuc=j96bsnhd|mel=100000|dpvc=1|ssv=3|lastModification=1629352868301|dtVersion=10221210805073954|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA2SVdfgjqru_10221210805073954.js|reportUrl=/rb_5154dcf7-6c87-4fe3-9248-775d7563d474|rid=RID_-349766608|rpid=-1607180062|domain=proximus.be"></script><script type="text/javascript" src="./proximus_files/ruxitagentjs_ICA2SVdfgjqru_10221210805073954.js.download" data-dtconfig="app=22cde78d6f3b6b10|agentId=a4e621391b65abf7|rcdec=1209600000|featureHash=ICA2SVdfgjqru|vcv=2|rdnt=1|uxrgce=1|bp=2|srmcrv=10|cuc=j96bsnhd|mel=100000|dpvc=1|ssv=3|lastModification=1629352868301|dtVersion=10221210805073954|srmcrl=1|tp=500,50,0,1|uxdcw=1500|vs=2|agentUri=/ruxitagentjs_ICA2SVdfgjqru_10221210805073954.js|reportUrl=/rb_5154dcf7-6c87-4fe3-9248-775d7563d474|rid=RID_-349766608|rpid=-901970568|domain=proximus.be"></script><script src="./proximus_files/launch-EN36847d9b70e14059ad1d2df83a032974-staging.min.js.download"></script><script src="./proximus_files/AppMeasurement.min.js.download" async=""></script><script src="./proximus_files/AppMeasurement_Module_AudienceManagement.min.js.download" async=""></script><script>_satellite["_runScript1"](function(event, target, Promise) {
+(function () {
+  function setReferrer() {
+    // set the referrer to the previous referrer if there is one
+    if (!!!Object.defineProperty) {
+      //bail when not supported
+
+      return true;
+    }
+    if (typeof document.previousReferrer != 'string' ) {
+      return false;
+    }
+    //set the vlaue of the referrer to the previousreferrer so that all external code accessing the referrer get the correct value
+    Object.defineProperty(document, "referrer", {
+      enumerable: true,
+
+      configurable: true,
+
+      writable: true,
+
+      value: document.previousReferrer,
+    });
+  }
+  var hasConsent =
+    !!window.__ && !!window.__.consentLevels && !!window.__.consentLevels.consentGiven ? true : false;
+
+  var referrer = document.referrer;
+  if (!hasConsent) {
+    //no consent, remember the referrer
+    sessionStorage.setItem("previousReferrer", document.referrer);
+    //monkey patch the sessionstorage.clean method to remember the set value;
+    var sclear = sessionStorage.clear;
+    sessionStorage.clear = function sessionStorageClear() {
+      var pref =
+        sessionStorage.getItem("previousReferrer") || document.referrer;
+      sclear.call(sessionStorage);
+      sessionStorage.setItem("previousReferrer", pref);
+    };
+  } else {
+    //read the previousReferrer and expose it
+    var previousReferrer = sessionStorage.getItem("previousReferrer");
+    document.previousReferrer = previousReferrer;
+    sessionStorage.removeItem("previousReferrer");
+    setReferrer();
+  }
+})();
+
+});</script><script>_satellite["_runScript2"](function(event, target, Promise) {
+(function () {
+    var clean=function clean(){function removeAccents(str){var accents="ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž",accentsOut="AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz",strLen=(str=str.split("")).length,i,x;for(i=0;i<strLen;i++)-1!=(x=accents.indexOf(str[i]))&&(str[i]=accentsOut[x]);return str.join("")}function replace(string){if("string"!=typeof string)return string;var slug=string.replace(/[,*+~.()'"?!:@]/gm,"").replace(/^\s+|\s+$/g,"").replace(/[-\s]+/g,"-").replace(/[\u1000-\uFFFF]+/g,"").replace(/(^-)|(-$)/g,"");return(slug=slug.normalize&&"function"==typeof slug.normalize?slug.normalize("NFD").replace(/[\u0300-\u036f]/g,""):removeAccents(slug)).toLowerCase()}return replace}();
+  var LoginOverlayer = {
+      initialized : false,
+    init: function LoginOverlayerInit() {
+        if(!!!this.initialized){
+            window.addEventListener("message", this);
+            this.initialized = true;
+        }
+    },
+    sendToTMS: function sendToTMS(data) {
+      !!data && !!window.utag && !!window.utag.track ? this.sendToTealium(data) : this.sendToAL(data);
+    },
+    sendToAL: function sendToAL(data) {
+      var popup_zone =
+        !!window._satellite && !!window._satellite.getVar 
+          ? _satellite.getVar('Page ID')
+          : "na";
+      data.popup.zone = popup_zone;
+      !!window.pxdatalayer && window.pxdatalayer.push(data);
+    },
+    sendToTealium: function sendToTealium(data) {
+      var out = {};
+      out.event = data.event;
+      out.event_detail = data.action.name;
+      out.event_location = data.popup.name;
+      var popupname = data.popup.name;
+      var popupzone =
+        !!window.utag_data  && !!window.utag_data.page_id
+          ? window.utag_data.page_id
+          : "na";
+      out.event_popup = [popupzone, popupname, "na"].join("|");
+      !!TMS && TMS.send && TMS.send(out);
+    },
+    handleEvent: function (e) {
+      if (
+        !!e.data &&
+        typeof e.data == "string" &&
+        e.data.toLowerCase().indexOf("loginoverlayer") > -1
+      ) {
+        if (e.data.indexOf("overlayer_successful_login") > -1) {
+          var data = {
+            event: "popup-click",
+            popup: {
+              zone: "na",
+              name: "login dialog",
+            },
+            action: {
+              type: "click",
+              name: "login success",
+            }
+          };
+          data.eventstring = [data.event,clean(data.popup.name),data.action.name].join(':').toLowerCase();
+          this.sendToTMS(data);
+        }
+        if (e.data.indexOf("overlayer_cancel_login") > -1) {
+          var data = {
+            event: "popup-click",
+            popup: {
+              zone: "na",
+              name: "login dialog",
+            },
+            action: {
+              type: "click",
+              name: "login cancel",
+            }
+          };
+          data.eventstring = [data.event,clean(data.popup.name),data.action.name].join(':').toLowerCase();
+          this.sendToTMS(data);
+        }
+        if (e.data.indexOf("overlayer_continue_without_login") > -1) {
+          var data = {
+            event: "popup-click",
+            popup: {
+              zone: "na",
+              name: "login dialog",
+            },
+            action: {
+              type: "click",
+              name: "login continue without",
+            }
+          };
+          data.eventstring = [data.event,clean(data.popup.name),data.action.name].join(':').toLowerCase();
+          this.sendToTMS(data);
+        }
+        if (e.data.indexOf("overlayer_show_login") > -1) {
+          var data = {
+            event: "popup-impression",
+            popup: {
+              zone: "na",
+              name: "login dialog",
+            },
+            action: {
+              type: "click",
+              name: "login show",
+            }
+          };
+          data.eventstring = [data.event,clean(data.popup.name),data.action.name].join(':').toLowerCase();
+          this.sendToTMS(data);
+        }
+      }
+    },
+  };
+
+  LoginOverlayer.init();
+  !!window._TMS_ && (window._TMS_.LoginOverlayer = LoginOverlayer);
+  !!window.__ && (window.__.LoginOverlayer = LoginOverlayer);
+})();
+});</script><script>_satellite["_runScript3"](function(event, target, Promise) {
+(function(){
+    var root = {};
+    !function(root,factory){"function"==typeof define&&define.amd?define([],factory):"object"==typeof exports?module.exports=factory():root.sentinel=factory()}(root,(function(){var isArray=Array.isArray,selectorToAnimationMap={},animationCallbacks={},styleEl,styleSheet,cssRules;return{on:function(cssSelectors,callback){if(callback){if(!styleEl){var doc=document,head=doc.head;doc.addEventListener("animationstart",(function(ev,callbacks,l,i){if(callbacks=animationCallbacks[ev.animationName])for(ev.stopImmediatePropagation(),l=callbacks.length,i=0;i<l;i++)callbacks[i](ev.target)}),!0),styleEl=doc.createElement("style"),head.insertBefore(styleEl,head.firstChild),styleSheet=styleEl.sheet,cssRules=styleSheet.cssRules}(isArray(cssSelectors)?cssSelectors:[cssSelectors]).map((function(selector,animId,isCustomName){(animId=selectorToAnimationMap[selector])||(isCustomName="!"==selector[0],selectorToAnimationMap[selector]=animId=isCustomName?selector.slice(1):"sentinel-"+Math.random().toString(16).slice(2),cssRules[styleSheet.insertRule("@keyframes "+animId+"{from{transform:none;}to{transform:none;}}",cssRules.length)]._id=selector,isCustomName||(cssRules[styleSheet.insertRule(selector+"{animation-duration:0.0001s;animation-name:"+animId+";}",cssRules.length)]._id=selector),selectorToAnimationMap[selector]=animId),(animationCallbacks[animId]=animationCallbacks[animId]||[]).push(callback)}))}},off:function(cssSelectors,callback){(isArray(cssSelectors)?cssSelectors:[cssSelectors]).map((function(selector,animId,callbackList,i){if(animId=selectorToAnimationMap[selector]){if(callbackList=animationCallbacks[animId],callback)for(i=callbackList.length;i--;)callbackList[i]===callback&&callbackList.splice(i,1);else callbackList=[];if(!callbackList.length){for(i=cssRules.length;i--;)cssRules[i]._id==selector&&styleSheet.deleteRule(i);delete selectorToAnimationMap[selector],delete animationCallbacks[animId]}}}))},reset:function(){selectorToAnimationMap={},animationCallbacks={},styleEl&&styleEl.parentNode.removeChild(styleEl),styleEl=0}}}));
+    function handler(el){
+        if(!!el){
+            //only for the language and the myproximus dropdown for now as the search icon also triggers this
+            if(el.className.indexOf('rs-btn-lang')>-1 || el.className.indexOf('rs-btn-mypxs')>-1){
+             el.setAttribute('data-tms-noclick','');
+             el.setAttribute('data-tms-id','tms_angular_ignore');   
+            }
+        }
+    }
+    root.sentinel.on('[data-header-toggle="toggleOpen"]',handler)     
+})();
+});</script><script>_satellite["_runScript4"](function(event, target, Promise) {
+(function(){
+    var existing = document.querySelector('[name="referrer"]');
+    if(!!existing){
+        existing.setAttribute('content','origin-when-cross-origin');
+    }else{
+        var meta = document.createElement('meta');
+        meta.setAttribute('name','referrer');
+        meta.setAttribute('content','origin-when-cross-origin');
+        document.head.appendChild(meta);
+    }
+})();
+});</script><script>_satellite["_runScript5"](function(event, target, Promise) {
+window.utag_data = window.utag_data || {};
+(function(){
+  //utils
+    var _ = {};
+  (function(root) {
+    function dlv(obj, key, def, p, undef) {
+      key = key.split ? key.split(".") : key;
+      for (p = 0; p < key.length; p++) {
+        obj = obj ? obj[key[p]] : undef;
+      }
+      return obj === undef ? def : obj;
+    }
+
+    function getComponentPart(component, part) {
+      var subparts = part.split("|");
+      for (var idx = 0; idx < subparts.length; idx++) {
+        var val = dlv(component, subparts[idx]);
+        if (!!val) {
+          return val;
+        }
+      }
+      return undefined;
+    }
+
+    function composeComponentDetail(event, parts) {
+      var data = !!event && !!event.detail ? event.detail : undefined;
+      if (!!data && !!parts && parts.length > 0) {
+        var composed = [];
+        var valid = false;
+        for (var index = 0; index < parts.length; index++) {
+          var part = parts[index];
+          var partvalue = getComponentPart(data, part);
+          if (!!partvalue) {
+            valid = true;
+            composed.push(partvalue);
+          } else {
+            composed.push("na");
+          }
+        }
+        if (valid) {
+          return composed.join("|");
+        }
+      }
+      return undefined;
+    }
+
+    root.composeComponentDetail = composeComponentDetail;
+  
+  })(_);
+  
+  //fontDetection
+  (function(root){
+    var detectFont = (function(){
+    // is this a browser that supports the native way of checking?
+    function supportsNativeAPI(){
+        if(!!document && !!document.fonts && !!document.fonts.check && typeof document.fonts.check == 'function'){return true}
+        return false;
+    }
+    if(supportsNativeAPI()){
+        return function detect(font){
+            if(!!!font){return false}
+            return !!document.fonts.check("12px "+font);
+        }
+    }else{
+        var canvas = document.createElement("canvas");
+        var context = canvas.getContext("2d");         
+        // the text whose final pixel size I want to measure
+        var text = Array(100).join('wmlli');
+        // specifying the baseline font
+        context.font = "72px monospace";
+        // checking the size of the baseline text
+        var baselineSize = context.measureText(text).width;
+        return function detect(fontName){
+            if(!!!fontName){return false;}
+             // specifying the font whose existence we want to check
+            context.font = "72px '" + fontName + "', monospace";
+            // checking the size of the font we want to check
+            var newSize = context.measureText(text).width;
+            return (newSize !== baselineSize)
+        }
+    }
+})();
+      root.detectFont = detectFont;
+
+  })(_);
+  
+  //detect user agent types for in app browsing using the useragent
+(function(root) {
+
+    root.detectUserAgent = detectUserAgent;
+
+   function detectUserAgent($) {
+       //get the browsers user agent
+       var ua = window.navigator.userAgent || window.navigator.vendor || window.opera;
+       if (!(!!ua)) {
+           return undefined; //just bail if the useragent is empty (should not happen though)
+       }
+       ua = ua + ''; //make sure it is string
+       var inapp = false; //default
+       var detect = { //all detection rules here, return value of each function is either a boolean or a string indicating what it is
+           proximus: function(ua) {
+               var m = ua.match(/((?:MyPxApp.|evmsapp.|Kiosk.)\w*)/i) || [];
+               m = !!m[1] ? m[1] : false;
+               if (m) {
+                   return m;
+               }
+               return false;
+           },
+           facebook: function(ua) {
+               return (ua.toLowerCase().indexOf("fban") > -1) || (ua.indexOf("fbav") > -1);
+           },
+           twitter: function(ua) {
+               return (ua.toLowerCase().indexOf("twitter") > -1);
+           },
+           pinterest: function(ua) {
+               return (ua.toLowerCase().indexOf("pinterest/") > -1);
+           },
+           'google search app': function(ua) {
+               return (ua.toLowerCase().indexOf("gsa/") > -1);
+           },
+         'cypress':function(ua){
+               return (ua.toLowerCase().indexOf(" cypress") > -1);  
+         },
+          'itcam':function(ua){
+               return (ua.toLowerCase().indexOf("itcam") > -1);  
+         },
+             'kbc': function(ua) {
+               return (ua.toLowerCase().indexOf("kbc") > -1);
+           },
+       };
+       for (var rule in detect) {
+           var r = detect[rule](ua); //execute the rule
+           if (!!r) { //if it is not false --> true or string
+               if (typeof r == 'string') { //when it is a string then use the value of the string
+                   inapp = r;
+               } else {
+                   inapp = rule; //otherwise use the key of the function to indicate what useragent it is
+               }
+               break;
+           }
+       }
+
+       if(!!inapp){return inapp}
+       return undefined;
+   }
+})(_);
+  
+  (function (root) {
+  function getData(){
+    return {
+          url:document.location.href
+    }
+  }
+  function Stopwatch(opt) {
+    this.options = opt || {};
+    this.options.autoStart = this.options.autoStart || true; 
+    this.name = this.options.name || 'tms-generic';
+    this.pauseDuration = 0;
+    this.startTime = Date.now();
+    this.hasPrevious = false;
+    this.getPage = !!this.options.getPage && typeof this.options.getPage == 'function' ? this.options.getPage : getData;
+    this.restore();
+    !!this.options.autoStart && (this.start());
+    return this;
+  }
+  var pr = Stopwatch.prototype;
+  pr.toJSON = function toJSON(){
+      return {
+          startTime : this.startTime,
+          pauseDuration : this.pauseDuration,
+          page : this.page,
+          elapsed : this.getElapsed()
+      }
+  };
+  pr.toString = function toString(){
+    return JSON.stringify(this.toJSON())
+};
+pr.save = function save(){
+    sessionStorage.setItem(this.name,this.toString());
+};
+pr.remove = function remove(){
+  sessionStorage.removeItem(this.name);
+};
+pr.restore = function restore(){
+    var d = sessionStorage.getItem(this.name);
+    if(!!d){
+        try {
+            d = JSON.parse(d);
+            !!d.pauseDuration && (this.pauseDuration += d.pauseDuration);
+            !!d.startTime && (this.startTime = d.startTime);
+            this.hasPrevious = true;
+            !!d.page && (this.page = d.page);
+            !!!d.page && (this.page = this.getPage());
+        } catch (error) {
+            
+        }
+    }
+    return this;
+};
+
+  pr.start = function start() {
+    this.startTime = !!this.startTime ? this.startTime : Date.now();
+    this.pauseDuration = !!this.pauseDuration ? this.pauseDuration : 0;
+    this.page = this.getPage();
+    document.addEventListener("visibilitychange", this, { passive: true });
+    this.handleEvent();
+    this.save();
+    return this;
+  };
+  pr.stop = function stop() {
+    var out = this.hasPrevious ? this.toJSON(): false;
+    this.startTime = Date.now();
+    this.pauseDuration = 0;
+    this.hasPrevious = true;
+    delete this.page;
+    document.removeEventListener("visibilitychange", this, { passive: true });
+    this.remove();
+    return out;
+  };
+  pr.pause = function pauze() {
+    this.pauseStartTime =  this.pauseStartTime || Date.now();
+    this.save();
+    return this;
+  };
+  pr.resume = function resume(){
+    if(!!this.pauseStartTime){
+        this.pauseDuration += Date.now() - this.pauseStartTime;
+        this.pauseStartTime = 0;
+    }
+    this.save();    
+    return this;
+  };
+
+  pr.getElapsed = function read() {
+    return  Date.now() - this.startTime - this.pauseDuration;
+  };
+
+  pr.handleEvent = function handleEvent(e) {
+    if (document.visibilityState === "hidden") {
+        this.pause();
+    } else if (document.visibilityState === "visible") {
+        this.resume();
+    }
+  };
+
+  root.SW = Stopwatch;
+})(_);
+   
+    (function(root) {
+      root.convertWebshopViewsToEvent = (function(){
+      function deepGet(obj, key, def, p, undef) {
+          key = key.split ? key.split(".") : key;
+          for (p = 0; p < key.length; p++) {
+            obj = obj ? obj[key[p]] : undef;
+          }
+          return obj === undef ? def : obj;
+        }
+  function convertWebshopViewsToEvent(data){
+  
+          var isLoadEvent = deepGet(data,'event','na');
+          isLoadEvent = isLoadEvent == 'element_load';
+          var bprod = deepGet(data,'bundled_products');
+          var previousdata = window.pxdatalayer && window.pxdatalayer.q && !!window.pxdatalayer.q.computedState ? window.pxdatalayer.q.computedState : {};
+          // shoppingcart open, this is the popup that is showing your cart content
+          if(isLoadEvent && deepGet(data,'page_category_l3')=='webshop_shoppingcart' && deepGet(data,'page_category_l4')=='open'){
+              var o = {
+                  event:'popup-impression',
+                  popup:{
+                      zone: deepGet(previousdata,'page.category.l3','na'),
+                      name: deepGet(data,'page_usecase')
+                  }
+                  
+              };
+              o.eventstring = ['cart-impression',o.popup.zone,o.popup.name].join(':');
+              !!bprod && (o.bundled_products = bprod);
+             // console.log('shoppingcart open event data after transform',JSON.stringify(o,null,2));
+              return o;
+          }
+  
+          //email cart dialog, the popup that is shown after clicking the send by email button
+          if(isLoadEvent && deepGet(data,'page_category_l3')=='webshop_EmailCartDialog' && deepGet(data,'page_category_l4')=='open'){
+              var o = {
+                  event:'popup-impression',
+                  popup:{
+                    zone:deepGet(previousdata,'page.category.l3','na'),
+                    name: deepGet(data,'page_usecase')
+                  }
+                  
+              };
+              o.eventstring = [o.event,o.popup.zone,o.popup.name].join(':');
+              !!bprod && (o.bundled_products = bprod);
+             // console.log('email cart open event data after transform',JSON.stringify(o,null,2));
+              return o;
+          }
+          return data;
+      }
+      return convertWebshopViewsToEvent;
+  })();
+  
+  })(_);
+  _.customer=function(t){"use strict";function r(t){for(var r,e=t+"=",o=document.cookie.split(";"),n=0;n<o.length;n++){for(var i=o[n];" "==i.charAt(0);)i=i.substring(1,i.length);if(0==i.indexOf(e)){var u=i.substring(e.length,i.length);return r=u,u=(r+="").replace(/\*/gm,"##").replace(/##/gm,",").replace(/!/gm," ")}}}var e="proximus.be",o={};function n(t){o.isArray(t)||(t=[t]);var r=t.length;r=r?r+1:0;for(var e,n=t.length;r--;)if((e=t[n-r])&&1*e>0)return 1*e}function i(t){return!!t&&(!o.isString(t)&&o.isNumber(t)&&(t=t.toString()),/\b[A-Fa-f0-9]{64}\b/.test(t))}function u(t,r){return r="string"==typeof t?(t=function(t){for(var r=unescape(encodeURIComponent(t)),e=r.length,o=0,n=[];o<e;)n[o>>2]=r.charCodeAt(o++)<<24|r.charCodeAt(o++)<<16|r.charCodeAt(o++)<<8|r.charCodeAt(o++);return n.len=e,n}(t)).len:r||t.length<<2,t[r>>2]|=128<<24-(31&(r<<=3)),t[15+(r+64>>9<<4)]=r,t}!function(){for(var t="Array Object String Date RegExp Function Boolean Number Null Undefined".split(" "),r=function(){return Object.prototype.toString.call(this).slice(8,-1)},e=t.length;e--;)o["is"+t[e]]=function(t){return function(e){return r.call(e)===t}}(t[e])}();var a=[],s=[];function c(t,r){a[0]||function(){function t(t){return 4294967296*(t-(t>>>0))|0}t:for(var r,e=0,o=2;e<64;o++){for(r=2;r*r<=o;r++)if(o%r==0)continue t;e<8&&(a[e]=t(Math.pow(o,.5))),s[e++]=t(Math.pow(o,1/3))}}();for(var e,o,n,i,c,g,d,l,m,f,v,S=0,p=[],h=a[0],w=a[1],b=a[2],_=a[3],C=a[4],I=a[5],x=a[6],A=a[7],D=u(t,r),O=D.length,y=s;S<O;){for(e=h,o=w,n=b,i=_,c=C,g=I,d=x,l=A,v=0;v<64;)v<16?p[v]=D[S+v]:(m=p[v-2],f=p[v-15],p[v]=(m>>>17^m<<15^m>>>19^m<<13^m>>>10)+(0|p[v-7])+(f>>>7^f<<25^f>>>18^f<<14^f>>>3)+(0|p[v-16])),m=(0|p[v])+l+(c>>>6^c<<26^c>>>11^c<<21^c>>>25^c<<7)+(c&g^~c&d)+y[v++],f=(e>>>2^e<<30^e>>>13^e<<19^e>>>22^e<<10)+(e&o^e&n^o&n),l=d,d=g,g=c,c=i+m|0,i=n,n=o,o=e,e=m+f|0;h+=e,w+=o,b+=n,_+=i,C+=c,I+=g,x+=d,A+=l,S+=16}return[h,w,b,_,C,I,x,A]}function g(t){var r=void 0;if(t)return!o.isString(t)&&o.isNumber(t)&&(t=t.toString()),o.isString(t)&&(t=t.replace(/^[ ]+/g,"").replace(/[ ]+$/g,"")),t&&o.isString(t)&&(r=function(t){for(var r=t.length;r--;)t[r]=("0000000"+(t[r]>>>0).toString(16)).slice(-8);return t.join("")}(c(t))),r}function d(t){return/[a-fA-F0-9]{32}/.test(t)}function l(t,r,e,o,n,i,u){var a=t+(r&e|~r&o)+(n>>>0)+u;return(a<<i|a>>>32-i)+r}function m(t,r,e,o,n,i,u){var a=t+(r&o|e&~o)+(n>>>0)+u;return(a<<i|a>>>32-i)+r}function f(t,r,e,o,n,i,u){var a=t+(r^e^o)+(n>>>0)+u;return(a<<i|a>>>32-i)+r}function v(t,r,e,o,n,i,u){var a=t+(e^(r|~o))+(n>>>0)+u;return(a<<i|a>>>32-i)+r}function S(t){return String.fromCharCode(255&t)}function p(t){return S(t)+S(t>>>8)+S(t>>>16)+S(t>>>24)}var h=function(t){for(var r=function(t){for(var r=t.length,e=r<<3,o=new Uint32Array(r+72>>>6<<4),n=0,i=t.length;n<i;++n)o[n>>>2]|=t.charCodeAt(n)<<((3&n)<<3);return o[r>>2]|=128<<(31&e),o[o.length-2]=e,o}(t),e=1732584193,o=4023233417,n=2562383102,i=271733878,u=0,a=r.length;u<a;u+=16){var s=e,c=o,g=n,d=i;e=l(e,o,n,i,r[u+0],7,3614090360),i=l(i,e,o,n,r[u+1],12,3905402710),n=l(n,i,e,o,r[u+2],17,606105819),o=l(o,n,i,e,r[u+3],22,3250441966),e=l(e,o,n,i,r[u+4],7,4118548399),i=l(i,e,o,n,r[u+5],12,1200080426),n=l(n,i,e,o,r[u+6],17,2821735955),o=l(o,n,i,e,r[u+7],22,4249261313),e=l(e,o,n,i,r[u+8],7,1770035416),i=l(i,e,o,n,r[u+9],12,2336552879),n=l(n,i,e,o,r[u+10],17,4294925233),o=l(o,n,i,e,r[u+11],22,2304563134),e=l(e,o,n,i,r[u+12],7,1804603682),i=l(i,e,o,n,r[u+13],12,4254626195),n=l(n,i,e,o,r[u+14],17,2792965006),e=m(e,o=l(o,n,i,e,r[u+15],22,1236535329),n,i,r[u+1],5,4129170786),i=m(i,e,o,n,r[u+6],9,3225465664),n=m(n,i,e,o,r[u+11],14,643717713),o=m(o,n,i,e,r[u+0],20,3921069994),e=m(e,o,n,i,r[u+5],5,3593408605),i=m(i,e,o,n,r[u+10],9,38016083),n=m(n,i,e,o,r[u+15],14,3634488961),o=m(o,n,i,e,r[u+4],20,3889429448),e=m(e,o,n,i,r[u+9],5,568446438),i=m(i,e,o,n,r[u+14],9,3275163606),n=m(n,i,e,o,r[u+3],14,4107603335),o=m(o,n,i,e,r[u+8],20,1163531501),e=m(e,o,n,i,r[u+13],5,2850285829),i=m(i,e,o,n,r[u+2],9,4243563512),n=m(n,i,e,o,r[u+7],14,1735328473),e=f(e,o=m(o,n,i,e,r[u+12],20,2368359562),n,i,r[u+5],4,4294588738),i=f(i,e,o,n,r[u+8],11,2272392833),n=f(n,i,e,o,r[u+11],16,1839030562),o=f(o,n,i,e,r[u+14],23,4259657740),e=f(e,o,n,i,r[u+1],4,2763975236),i=f(i,e,o,n,r[u+4],11,1272893353),n=f(n,i,e,o,r[u+7],16,4139469664),o=f(o,n,i,e,r[u+10],23,3200236656),e=f(e,o,n,i,r[u+13],4,681279174),i=f(i,e,o,n,r[u+0],11,3936430074),n=f(n,i,e,o,r[u+3],16,3572445317),o=f(o,n,i,e,r[u+6],23,76029189),e=f(e,o,n,i,r[u+9],4,3654602809),i=f(i,e,o,n,r[u+12],11,3873151461),n=f(n,i,e,o,r[u+15],16,530742520),e=v(e,o=f(o,n,i,e,r[u+2],23,3299628645),n,i,r[u+0],6,4096336452),i=v(i,e,o,n,r[u+7],10,1126891415),n=v(n,i,e,o,r[u+14],15,2878612391),o=v(o,n,i,e,r[u+5],21,4237533241),e=v(e,o,n,i,r[u+12],6,1700485571),i=v(i,e,o,n,r[u+3],10,2399980690),n=v(n,i,e,o,r[u+10],15,4293915773),o=v(o,n,i,e,r[u+1],21,2240044497),e=v(e,o,n,i,r[u+8],6,1873313359),i=v(i,e,o,n,r[u+15],10,4264355552),n=v(n,i,e,o,r[u+6],15,2734768916),o=v(o,n,i,e,r[u+13],21,1309151649),e=v(e,o,n,i,r[u+4],6,4149444226),i=v(i,e,o,n,r[u+11],10,3174756917),n=v(n,i,e,o,r[u+2],15,718787259),o=v(o,n,i,e,r[u+9],21,3951481745),e=e+s>>>0,o=o+c>>>0,n=n+g>>>0,i=i+d>>>0}var S=new String(p(e)+p(o)+p(n)+p(i));return S.toHex=function(){for(var t="",r=0,e=S.length;r<e;++r)t+=(256+(255&S.charCodeAt(r))).toString(16).substr(-2);return t},S},w=function(t){return h(function(t){return unescape(encodeURIComponent(t))}(t))};function b(t){return w(t).toHex()}function _(t){var r=void 0;if(t&&o.isString(t))try{r=JSON.parse(t)}catch(t){}return r}function C(){try{var t="test",r=window.sessionStorage;return r.setItem(t,"1"),r.removeItem(t),!0}catch(t){return!1}}function I(){try{var t="test",r=window.localStorage;return r.setItem(t,"1"),r.removeItem(t),!0}catch(t){return!1}}function x(t){if(void 0!==t&&""!==t&&(void 0!==(t=(t+"").replace(/\D/g,""))&&0===t.indexOf("4")&&(t=t.replace(/^4/,"324")),void 0!==t&&0===t.indexOf("04")&&(t=t.replace(/^0/,"32")),11===t.length))return t}var A=C(),D=I();function O(t,r,e){return r=t.split("."),e=/\.co\.|\.com\.|\.org\.|\.edu\.|\.net\.|\.asn\./.test(t)?3:2,r.splice(r.length-e,e).join(".")}var y={takeNumber:n,isSHA256:i,SHA256:g,isMD5:d,MD5:b,safeJSONParse:_,isSessionStorageSupported:C,isLocalStorageSupported:I,validateMSISDN:x,getAuthentificationStatus:function(){var t={loggedIn:!1,authenticated:!1,status:"unknown"},e=r("BGC_AUT_LVL"),o=!!(e=e?e.replace(/ /gm,"").toLowerCase():void 0)&&"aut"==e,n=r("BGC_AUT_LVL_FULLNAME");return n=n?n.replace(/ /gm,""):void 0,o&&n?(t.loggedIn=!0,t.authenticated=!0,t.status="authenticated - logged in",t):!!e&&"ide"==e&&n?(t.loggedIn=!1,t.authenticated=!0,t.status="authenticated - not logged in",t):(t.loggedIn=!1,t.authenticated=!1,t.status="not authenticated",t)}},k=O(document.domain);function F(){var t=void 0,e=n(r("selectedCustomerAccountId"));if(e)return e=e.toString(),(t={}).customerid=e,t._origin="ck_sca",t}function L(){var t;return(t=H())&&t.customerid||(t=j())&&t.customerid||(t=R())&&t.customerid?t:void 0}function N(t){return t&&t.customerid&&(t.customeridHash=i(t.customerid)?t.customerid:g(t.customerid)),t&&t.msisdn&&(t.msisdnHash=d(t.msisdn)?x(t.msisdn):b(x(t.msisdn))),t}function T(t){var r;if(t){var e=n(t.customer_id),o=n(t.gid,t.user_gid,t.user_globalid);if(e)return e=e.toString(),(r={}).customerid=e,o&&(o=o.toString(),r.globalid=o),r._origin="tg_teal",r}return r}function B(t){var r;if(t&&t.user&&t.user.customerid){var e=n(t.user.customerid);e&&(r={},e=e.toString(),r.customerid=e)}if(t&&t.user&&t.user.globalid){var o=n(t.user.globalid);if(o)return r=r||{},o=o.toString(),r.globalid=o,r._origin="tg_pickx",r}return r}function M(t){var r;if(t&&t.customer_id){var e=n(t.customer_id);if(e){e=e.toString(),(r={}).customerid=e;var o=n(t.user_gid);return o&&(o=o.toString(),r.globalid=o),r._origin="tg_ws",r}}return r}function U(t){var r;if(t&&t.customer_id){var e=n(t.customer_id);if(e)return e=e.toString(),(r={}).customerid=e,r._origin="tg_woc",r}return r}function j(){var t=void 0;if(A&&window.sessionStorage&&window.sessionStorage.getItem&&"function"==typeof window.sessionStorage.getItem){var r=_(window.sessionStorage.getItem("customerAccount"));if(r){var e=n(r.globalId),o=n(r.cdbIds),i=n(r.mobile);o&&(t={},o=o.toString(),t.customerid=o,t._origin="px_ss_ca",e&&(t.globalid=e.toString()),i&&(i=x(i))&&(i=i.toString(),t.msisdn=i))}}return t}function H(){var t=void 0;if(A&&window.sessionStorage&&window.sessionStorage.getItem&&"function"==typeof window.sessionStorage.getItem){var r=_(window.sessionStorage.getItem("authentication"));if(r&&r.cid){var e=n(r.cid);e&&(t={},e=e.toString(),t.customerid=e,t._origin="mpx_ss_aut")}}return t}function R(){var t=void 0;if(D&&window.localStorage&&window.localStorage.getItem&&"function"==typeof window.localStorage.getItem&&document.location.href.toLowerCase().indexOf("proximus.be/webshop/")>-1){var r=_(window.localStorage.getItem("analytics-thank-you-OC-cart"));if(r&&r.customer){var e=n(r.customer.cdbId),o=n(r.customer.globalId),i=n(r.customer.contactNumber);e&&(t={},e=e.toString(),t.customerid=e,t._origin="ws_ls_oc",o&&(o=o.toString(),t.globalid=o),i&&(i=x(i))&&(t.msisdn=i))}}return t}function G(t){var r=t.customerid||"",n=t.globalid||"",i=k;!function(t,r,n,i){var u;u=r;var a=t+"="+(r=(u+="").replace(/^,/gm,"").replace(/,$/gm,"").replace(/\*/gm,",").replace(/,/gm,"##").replace(/\s/gm,"!"));if(n&&o.isNumber(n)){var s=new Date;s.setTime(s.getTime()+24*n*60*60*1e3),a+="; expires="+s.toGMTString()}a+="; domain="+(i||"."+e),a+="; path=/",document.cookie=a}("tmsids",[r,n].join("|"),734,i)}function P(){var t,e=r("tmsids");if(e&&(e=e.split("|")),e&&e.length>1){var o=e[0],n=e[1];if(o&&(o=o.toString()),n&&(n=n.toString()),o)return(t={}).customerid=o,n&&(t.customerid=o),t._origin="ck_tmsids",t=N(t)}return t}function W(t){var r=L();if(r&&r.customerid)return G(r),N(r);var e=document.location.href.toLowerCase();if(e.indexOf("proximus.be/webshop")>-1&&e.indexOf("/login")<0){var o=M(t);if(o&&o.customerid)return G(o),N(o)}if(e.indexOf("/order-completion")>-1&&e.indexOf("/login")<0){var n=U(t);if(n&&n.customerid)return G(n),N(n)}if(e.indexOf("proximus.be/pickx")>-1&&e.indexOf("/login")<0){var i=B(t),u=P();if(i&&u&&i.globalid&&u.globalid&&i.globalid==u.globalid)return N(u);if(i&&!u)return N(i)}var a=P();if(a&&a.customerid)return N(a);var s=T(t);if(s&&s.customerid)return G(r),N(s);var c=F();return c&&c.customerid?N(c):void 0}var E={__proto__:null,getURLDomain:O,util:y,getCustomerDetailsFromLegacyCookie:F,getCustomerDetailsFromBrowserStorage:L,processCustomerObject:N,getCustomerDetailsFromTagging:T,getCustomerDetailsFromTaggingPickx:B,getCustomerDetailsFromTaggingWebshop:M,getCustomerDetailsFromTaggingWOC:U,getCustomerDetailsFromBrowserStorageProximus:j,getCustomerDetailsFromBrowserStorageMyBill:H,getCustomerDetailsFromBrowserStorageWebshop:R,setCustomerDataInCookie:G,getCustomerDataInCookie:P,getCustomerDetails:W},J=W;return t._=E,t.getCustomerdetails=J,t}({});
+
+  _.isEmptyObject = function isEmptyObject(value){if(null==value)return!0;for(var key in value)if(hasOwnProperty.call(value,key))return!1;return!0};
+    _.getUrlParameter = function getUrlParameter(name, str) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+      var results = regex.exec(str);
+      return results === null ? "": decodeURIComponent(results[1].replace(/\+/g, " "));
+    };
+    _.clean = function(text) {
+        text = text == null ? "" : (text + "").replace(/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g, "").replace(/\s+/g, ' ').split(' ').join('.').replace(/\s/g, "");
+        return text;
+    }
+    ;
+    _.getTxt = (function() {
+        var text = 'innerText'in document.createElement('div') ? 'innerText' : 'textContent';
+        return function(el) {
+            return el ? el[text] : null;
+        }
+    }
+    )();
+    _.extend = function() {
+
+        // Variables
+        var extended = {};
+        var deep = false;
+        var i = 0;
+
+        // Check if a deep merge
+        if (Object.prototype.toString.call(arguments[0]) === '[object Boolean]') {
+            deep = arguments[0];
+            i++;
+        }
+
+        // Merge the object into the extended object
+        var merge = function(obj) {
+            for (var prop in obj) {
+                if (obj.hasOwnProperty(prop)) {
+                    // If property is an object, merge properties
+                    if (deep && Object.prototype.toString.call(obj[prop]) === '[object Object]') {
+                        extended[prop] = _.extend(extended[prop], obj[prop]);
+                    } else {
+                        extended[prop] = obj[prop];
+                    }
+                }
+            }
+        };
+
+        // Loop through each object and conduct a merge
+        for (; i < arguments.length; i++) {
+            merge(arguments[i]);
+        }
+
+        return extended;
+
+    }
+    ;
+ //prettier-ignore
+    function safeJSONParse(v){var o=void 0;try{o=JSON.parse(v)}catch(e){}return o}
+    //prettier-ignore
+    function isJSONText(v){return!!("string"==typeof v&&v.indexOf("{")>-1&&/^[\[|\{](\s|.*|\w)*[\]|}]$/.test(v))}
+ // correctly parse values
+    function jsonReplacer(k,v){
+        if(!!v && isJSONText(v)){
+            return safeJSONParse(v);
+        }
+        return v;
+    }
+    //make a 'copy' of the input and transform any json values
+    function transformJSONValues(o){
+        var output;
+        var out = JSON.stringify(o,jsonReplacer);
+        if(!!out){
+            output = safeJSONParse(out);
+            !!!output && (output = o);
+        }else{
+            output = o;
+        }
+        return output;
+    }
+    _.getAttributes = function(el) {
+        var out = Object.create(null);
+        var att = el.attributes;
+        for (var i = 0; i < att.length; i++) {
+            var el = att[i];
+            if ((t = el.name.replace('data-tms-', '')) == el.name) {
+                // do not add if not properly prefixed
+                continue;
+            }
+            if(t.indexOf('event-')!=0){
+                t = t.replace(/-/gm, '.');
+            }
+            out[t] = el.value.toLowerCase();
+        }
+          out = transformJSONValues(out);
+        return out;
+    }
+    ;
+    _.unflatten = function unflatten (target, opts) {
+        opts = opts || {}
+        var delimiter = opts.delimiter || '.'
+        var overwrite = opts.overwrite || true
+        var result = {}
+
+        if (Object.prototype.toString.call(target) !== '[object Object]') {
+          return target
+        }
+
+        // safely ensure that the key is
+        // an integer.
+        function getkey (key) {
+          var parsedKey = Number(key)
+
+          return (
+            isNaN(parsedKey) ||
+            key.indexOf('.') !== -1 ||
+            opts.object
+          ) ? key
+            : parsedKey
+        }
+
+        var sortedKeys = Object.keys(target).sort(function (keyA, keyB) {
+          return keyA.length - keyB.length
+        })
+
+        sortedKeys.forEach(function (key) {
+          var split = key.split(delimiter)
+          var key1 = getkey(split.shift())
+          var key2 = getkey(split[0])
+          var recipient = result
+
+          while (key2 !== undefined) {
+            var type = Object.prototype.toString.call(recipient[key1])
+            var isobject = (
+              type === '[object Object]' ||
+              type === '[object Array]'
+            )
+
+            // do not write over falsey, non-undefined values if overwrite is false
+            if (!overwrite && !isobject && typeof recipient[key1] !== 'undefined') {
+              return
+            }
+
+            if ((overwrite && !isobject) || (!overwrite && recipient[key1] == null)) {
+              recipient[key1] = (
+                typeof key2 === 'number' &&
+                !opts.object ? [] : {}
+              )
+            }
+
+            recipient = recipient[key1]
+            if (split.length > 0) {
+              key1 = getkey(split.shift())
+              key2 = getkey(split[0])
+            }
+          }
+
+          // unflatten again for 'messy objects'
+          recipient[key1] = unflatten(target[key], opts)
+        })
+
+        return result
+      };
+  function extractWebshopEventData(data){
+    var o = {};
+    if(!!data && !!data.data_action && !!data.event_action && !!data.event_location && !!data.event_detail){
+        var event_string = [data.event_action,data.event_location,data.event_detail].join(':').toLowerCase();
+        var link = {
+            name:data.page_event || data.eventName,
+            zone:data.event_location
+        };
+        o.event = 'link-click';
+        o.eventstring = event_string;
+        o.link = link;
+        //handle the promocodes in webshop
+       if(!!data.promoCode){
+         o.promocode = data.promoCode;;
+         if(!!!o.action){
+           o.action = {
+           name:data.event_action.toLowerCase()
+           }
+         }
+       }
+      if(!!data.promoCodeError){
+        o.error = {
+          type:'error',
+          message:data.promoCodeError
+        }
+      }
+        return o;
+    }
+    return data;
+}
+    _.parseUtagData = function parseUtagData(data){
+      data = _.convertWebshopViewsToEvent(data);
+      data = extractWebshopEventData(data);
+      if(data.event && data.event.toLowerCase() =='click'){
+        data.event = 'link-click';
+        if(!!data.event_location){
+          data.link_zone = data.event_location;
+          delete data.event_location;
+          
+        }
+        if(!!data.event_detail){
+          data.link_name = data.event_detail;
+          delete data.event_detail;
+        
+        }
+         }
+    var o = __.unflatten(data,{delimiter:'_'});
+      if(JSON.stringify(o) == '{}'){
+         return undefined;}
+  !!o.page && !!o.page.lang && (o.page.language = o.page.lang);
+  !!o.segment && !!o.segment.page && o.segment.page.segment && (o.page.segment = o.segment.page.segment);
+      o = JSON.parse(JSON.stringify(o));
+    return o;
+    };
+    _.getDataset = function(el) {
+        return _.unflatten(_.getAttributes(el));
+    }
+    ;
+_.crypto = {};
+!function(root){function FF(a,b,c,d,m,s,k){var n=a+(b&c|~b&d)+(m>>>0)+k;return(n<<s|n>>>32-s)+b}function GG(a,b,c,d,m,s,k){var n=a+(b&d|c&~d)+(m>>>0)+k;return(n<<s|n>>>32-s)+b}function HH(a,b,c,d,m,s,k){var n=a+(b^c^d)+(m>>>0)+k;return(n<<s|n>>>32-s)+b}function II(a,b,c,d,m,s,k){var n=a+(c^(b|~d))+(m>>>0)+k;return(n<<s|n>>>32-s)+b}function bs(byte){return String.fromCharCode(255&byte)}function wordToBytes(word){return bs(word)+bs(word>>>8)+bs(word>>>16)+bs(word>>>24)}function byteToHex(byte){return(256+(255&byte)).toString(16).substr(-2)}var utf8toBytes=function(utf8){return unescape(encodeURIComponent(utf8))};function bytesToWords(bytes){for(var bytes_count=bytes.length,bits_count=bytes_count<<3,words=new Uint32Array(bytes_count+72>>>6<<4),i=0,n=bytes.length;i<n;++i)words[i>>>2]|=bytes.charCodeAt(i)<<((3&i)<<3);return words[bytes_count>>2]|=128<<(31&bits_count),words[words.length-2]=bits_count,words}var bytesToMD5=function(bytes){for(var words=bytesToWords(bytes),a=1732584193,b=4023233417,c=2562383102,d=271733878,S11=7,S12=12,S13=17,S14=22,S21=5,S22=9,S23=14,S24=20,S31=4,S32=11,S33=16,S34=23,S41=6,S42=10,S43=15,S44=21,i=0,ws=words.length;i<ws;i+=16){var AA=a,BB=b,CC=c,DD=d;a=FF(a,b,c,d,words[i+0],7,3614090360),d=FF(d,a,b,c,words[i+1],12,3905402710),c=FF(c,d,a,b,words[i+2],17,606105819),b=FF(b,c,d,a,words[i+3],22,3250441966),a=FF(a,b,c,d,words[i+4],7,4118548399),d=FF(d,a,b,c,words[i+5],12,1200080426),c=FF(c,d,a,b,words[i+6],17,2821735955),b=FF(b,c,d,a,words[i+7],22,4249261313),a=FF(a,b,c,d,words[i+8],7,1770035416),d=FF(d,a,b,c,words[i+9],12,2336552879),c=FF(c,d,a,b,words[i+10],17,4294925233),b=FF(b,c,d,a,words[i+11],22,2304563134),a=FF(a,b,c,d,words[i+12],7,1804603682),d=FF(d,a,b,c,words[i+13],12,4254626195),c=FF(c,d,a,b,words[i+14],17,2792965006),a=GG(a,b=FF(b,c,d,a,words[i+15],22,1236535329),c,d,words[i+1],5,4129170786),d=GG(d,a,b,c,words[i+6],9,3225465664),c=GG(c,d,a,b,words[i+11],14,643717713),b=GG(b,c,d,a,words[i+0],20,3921069994),a=GG(a,b,c,d,words[i+5],5,3593408605),d=GG(d,a,b,c,words[i+10],9,38016083),c=GG(c,d,a,b,words[i+15],14,3634488961),b=GG(b,c,d,a,words[i+4],20,3889429448),a=GG(a,b,c,d,words[i+9],5,568446438),d=GG(d,a,b,c,words[i+14],9,3275163606),c=GG(c,d,a,b,words[i+3],14,4107603335),b=GG(b,c,d,a,words[i+8],20,1163531501),a=GG(a,b,c,d,words[i+13],5,2850285829),d=GG(d,a,b,c,words[i+2],9,4243563512),c=GG(c,d,a,b,words[i+7],14,1735328473),a=HH(a,b=GG(b,c,d,a,words[i+12],20,2368359562),c,d,words[i+5],4,4294588738),d=HH(d,a,b,c,words[i+8],11,2272392833),c=HH(c,d,a,b,words[i+11],16,1839030562),b=HH(b,c,d,a,words[i+14],23,4259657740),a=HH(a,b,c,d,words[i+1],4,2763975236),d=HH(d,a,b,c,words[i+4],11,1272893353),c=HH(c,d,a,b,words[i+7],16,4139469664),b=HH(b,c,d,a,words[i+10],23,3200236656),a=HH(a,b,c,d,words[i+13],4,681279174),d=HH(d,a,b,c,words[i+0],11,3936430074),c=HH(c,d,a,b,words[i+3],16,3572445317),b=HH(b,c,d,a,words[i+6],23,76029189),a=HH(a,b,c,d,words[i+9],4,3654602809),d=HH(d,a,b,c,words[i+12],11,3873151461),c=HH(c,d,a,b,words[i+15],16,530742520),a=II(a,b=HH(b,c,d,a,words[i+2],23,3299628645),c,d,words[i+0],6,4096336452),d=II(d,a,b,c,words[i+7],10,1126891415),c=II(c,d,a,b,words[i+14],15,2878612391),b=II(b,c,d,a,words[i+5],21,4237533241),a=II(a,b,c,d,words[i+12],6,1700485571),d=II(d,a,b,c,words[i+3],10,2399980690),c=II(c,d,a,b,words[i+10],15,4293915773),b=II(b,c,d,a,words[i+1],21,2240044497),a=II(a,b,c,d,words[i+8],6,1873313359),d=II(d,a,b,c,words[i+15],10,4264355552),c=II(c,d,a,b,words[i+6],15,2734768916),b=II(b,c,d,a,words[i+13],21,1309151649),a=II(a,b,c,d,words[i+4],6,4149444226),d=II(d,a,b,c,words[i+11],10,3174756917),c=II(c,d,a,b,words[i+2],15,718787259),b=II(b,c,d,a,words[i+9],21,3951481745),a=a+AA>>>0,b=b+BB>>>0,c=c+CC>>>0,d=d+DD>>>0}var hash_bytes=new String(wordToBytes(a)+wordToBytes(b)+wordToBytes(c)+wordToBytes(d));return hash_bytes.toHex=function(){for(var hex="",i=0,n=hash_bytes.length;i<n;++i)hex+=byteToHex(hash_bytes.charCodeAt(i));return hex},hash_bytes},utf8toMD5=function(utf8){return bytesToMD5(utf8toBytes(utf8))};function md5(utf8){return utf8toMD5(utf8).toHex()}root.md5=md5}(_.crypto);
+
+_.crypto.isMD5 = function isMD5(inputString) {
+	return (/[a-fA-F0-9]{32}/).test(inputString);
+};
+
+_.crypto.isSHA256 = function isSHA256(inputString){
+    return /\b[A-Fa-f0-9]{64}\b/.test(inputString);
+}
+
+/*! litejs.com/MIT-LICENSE.txt */
+!function(q){function D(){function a(a){return 4294967296*(a-(a>>>0))|0}var b=0,c=2,d;a:for(;64>b;c++){for(d=2;d*d<=c;d++)if(0===c%d)continue a;8>b&&(h[b]=a(Math.pow(c,.5)));C[b++]=a(Math.pow(c,1/3))}}var h=[],C=[];(q.crypto||(q.crypto={})).sha256=function(a){h[0]||D();var b,c,d,e,n,p,r,k,l,f,m=0,g=[],t=h[0],u=h[1],v=h[2],w=h[3],x=h[4],y=h[5],z=h[6],A=h[7],B;b=void 0;if("string"==typeof a){a=unescape(encodeURIComponent(a));b=a.length;c=0;for(d=[];c<b;)d[c>>2]=a.charCodeAt(c++)<<24|a.charCodeAt(c++)<<
+    16|a.charCodeAt(c++)<<8|a.charCodeAt(c++);d.len=b;a=d;b=a.len}else b=b||a.length<<2;a[b>>2]|=128<<24-(31&(b<<=3));a[(b+64>>9<<4)+15]=b;B=a;for(var q=B.length,E=C;m<q;){a=t;b=u;c=v;d=w;e=x;n=y;p=z;r=A;for(f=0;64>f;)16>f?g[f]=B[m+f]:(k=g[f-2],l=g[f-15],g[f]=(k>>>17^k<<15^k>>>19^k<<13^k>>>10)+(g[f-7]|0)+(l>>>7^l<<25^l>>>18^l<<14^l>>>3)+(g[f-16]|0)),k=(g[f]|0)+r+(e>>>6^e<<26^e>>>11^e<<21^e>>>25^e<<7)+(e&n^~e&p)+E[f++],l=(a>>>2^a<<30^a>>>13^a<<19^a>>>22^a<<10)+(a&b^a&c^b&c),r=p,p=n,n=e,e=d+k|0,d=c,c=b,
+    b=a,a=k+l|0;t+=a;u+=b;v+=c;w+=d;x+=e;y+=n;z+=p;A+=r;m+=16}m=[t,u,v,w,x,y,z,A];for(g=m.length;g--;)m[g]=("0000000"+(m[g]>>>0).toString(16)).slice(-8);return m.join("")}}(_);
+   
+    _.getDomData = function(el) {
+
+        if (!!!el) {
+
+            return undefined;
+
+        }
+
+        var data = _.getDataset(el);
+        var info = {};
+        if (!!data && data.info) {
+
+            //TODO safe json parse (externalise to not harm perf)
+            info = JSON.parse(data.info);
+            delete (data.info);
+        }
+        var args = [true, {}, data];
+        !!info && args.push(info);
+        var o = _.extend.apply(_, args);
+        return o;
+
+    }
+    ;
+  //add userinfo data
+(function(root) {
+
+  root.getUserInfo = getUserInfo;
+
+  function getUserInfo() {
+    var info = _satellite.cookie.get("userInfo");
+    var out;
+    function getCategories(v) {
+      if (!!v) {
+        return v == 1
+          ? "internet"
+          : v == 2
+          ? "tv"
+          : v == 3
+          ? "fix"
+          : v == 4
+          ? "mobile"
+          : undefined;
+      }
+      return undefined;
+    }
+    if (!!info) {
+      info = decodeURIComponent(info);
+      info = info.split("|");
+      var segment = info[0];
+      var mcsonly = info[1];
+      var owner = info[2];
+      var categories = info[3];
+      var prepaid = info[4];
+      if (!!prepaid) {
+        if (prepaid == 0) {
+          prepaid = info[5] || "";
+          prepaid = prepaid + "";
+          prepaid = prepaid.toLowerCase();
+        } else if (prepaid == 1) {
+          prepaid = info[5] || "prepaid";
+          prepaid = prepaid + "";
+          prepaid = prepaid.toLowerCase();
+        } else {
+          prepaid = undefined;
+        }
+      }
+      !!segment &&
+        (segment =
+          segment == 1
+            ? "private"
+            : segment == 2
+            ? "companies"
+            : segment == 3
+            ? "large"
+            : undefined);
+      mcsonly = mcsonly == 1 ? "mcsonly" : undefined;
+      !!owner && (owner = owner == 1 ? "au" : "ur");
+      if (!!categories && (categories = categories.split(","))) {
+        var tcat = [];
+        for (var i = 0; i < categories.length; i++) {
+          var f = getCategories(categories[i]);
+          !!f && tcat.push(f);
+        }
+        tcat.length > 0 && (categories = tcat.sort().join("-"));
+      }
+      !!!segment && (segment = "na");
+      !!!owner && (owner = "na");
+      !!!categories && (categories = "na");
+      !!!prepaid && (prepaid = "na");
+      var output = [segment, owner, categories, prepaid];
+      output = output.join("|");
+      out = output;
+    }
+    return out;
+  }
+})(_);
+  
+  (function(scope){
+
+  var dec2hex = [];
+  for (var i=0; i<=15; i++) {
+    dec2hex[i] = i.toString(16);
+  }
+
+  var UUID = function() {
+    var uuid = '';
+    for (var i=1; i<=18; i++) {
+     if (i===15) {
+        uuid += 4;
+      } else if (i===20) {
+        uuid += dec2hex[(Math.random()*4|0 + 8)];
+      } else {
+        uuid += dec2hex[(Math.random()*16|0)];
+      }
+    }
+    scope.UUID = function (){return uuid};
+    return uuid;
+  };
+    scope.UUID = UUID;
+})(_);
+    _.consentLevels = window.__.consentLevels || undefined;
+    window.__ = _;
+    //end util
+})();
+
+(function(LIB) {
+  ("use strict");
+  var salesCatLookup = [
+    { name: "onlinesales#connectivity#fixedline#", category: "fix" },
+    { name: "onlinesales#connectivity#internet#", category: "fix" },
+    { name: "onlinesales#connectivity#postpaid", category: "postpaid" },
+    { name: "onlinesales#connectivity#prepaid#", category: "prepaid" },
+    { name: "onlinesales#connectivity#tv#", category: "fix" },
+    { name: "onlinesales#device#", category: "device" },
+    { name: "onlinesales#e-reload", category: "ereload" },
+    {
+      name: "onlinesales#pack#pack#pack#",
+      category: "fix,postpaid,tvservices",
+    },
+    { name: "onlinesales#stimulation#tvservices#", category: "tvservices" },
+    { name: "onlinesales#stimulation#", category: "services" },
+  ];
+  //start categorisation sales cats
+  function getProductClassification(key) {
+    var array = salesCatLookup;
+    var al = array.length;
+    for (var index = 0; index < al; index++) {
+      var element = array[index];
+      if (!!key && key.indexOf(element.name) > -1) {
+        return element.category;
+      }
+    }
+    return false;
+  }
+  if (!LIB) {
+    return true;
+  }
+  LIB.parseProducts = parseProducts;
+
+  function extractCatFromSalesCatLookup(sc) {
+    var spl = !!sc ? sc.split("#") : [];
+    spl = !!spl && spl.length >= 3 ? spl[2] : false;
+    return spl;
+  }
+
+  function getBundleCategory(record) {
+    if (record.group_type == "standalone") {
+      if (!!record.sales_category) {
+        var o = extractCatFromSalesCatLookup(record.sales_category);
+        if (!!o) {
+          return o;
+        } else if (!!record.category) {
+          return record.category;
+        }
+      }
+    } else if (
+      !!record.sales_category &&
+      record.sales_category.indexOf("connectivity") > -1
+    ) {
+      var o = extractCatFromSalesCatLookup(record.sales_category);
+      return o;
+    }
+    return undefined;
+  }
+
+  function productToLowerCase(b) {
+    return JSON.parse(
+      JSON.stringify(b)
+        .toLowerCase()
+        .replace(/"(\d+)(,)(\d+)"/g, '"$1.$3"')
+        .replace(/\|/gm, "#")
+        .replace(/;/gm, "#")
+    );
+  }
+  var dataphone_lu = {
+    dvanr: "s",
+    mhzmj: "m",
+    plkay: "l",
+  };
+  function parseProduct(product, parent, out, order) {
+    if (!!!product || !!!product.id) {
+      return out ? out : [];
+    }
+    var toAdd = true;
+    var record = {
+      bundleid: product.bundleid || parent.bundleid,
+      id: product.id,
+      best_pick: product.best_pick || "0",
+      name: product.name,
+      type: product.action || "new",
+      price: (product.price || 0) + "",
+      // points : (product.points || 0) + "",//removed due to unused
+      quantity: (product.quantity || 1) + "",
+      clv: (product.clv || 0) + "",
+      upm: "0",
+      sales_category: product.sales_category,
+      cumulated: product.cumulated
+        ? product.cumulated.replace(/,/gm, "-")
+        : product.cumulated,
+      cat: product.category,
+      cat_type: product.type || product.id,
+      level: product.level || 0,
+      group_main: "",
+      order_cumulated: "",
+      group_type: "",
+      group_id: "",
+      sales_category_context: "outofpack",
+      bundle_category: "",
+      category: "",
+      sales_category_ctx: "",
+      subcat: "",
+      isjo: product.isjo || false,
+      combi: "",
+      options: [],
+      stock: product.stock || "na",
+      hasjo: product.isjo || "na",
+      hasclickcollect: product.hasclickcollect || "na",
+      jostock: product.jostock || "na",
+      prejostock: product.prejostock || "na",
+      prestock: product.prestock || "na",
+      ccstock: product.ccstock || "na",
+      detail: "",
+      classification: "",
+      processed : true
+    };
+    record.detail = [
+      record.hasjo,
+      record.hasclickcollect,
+      record.jostock,
+      record.prejostock,
+      record.prestock,
+      record.ccstock,
+    ].join("#");
+    record.upm = record.quantity * record.price + "";
+    record.classification = !!record.sales_category
+      ? getProductClassification(record.sales_category)
+      : "";
+    if (parent) {
+      if (record.cat == "joint_offer") {
+        record.level = 0;
+        //parent.isjo = true;
+        record.isjo = true;
+      }
+
+      var dfl = dataphone_lu[record.id];
+      !!dfl && (record.name = "option " + dfl);
+      record.cumulated = parent.cumulated;
+      record.group_main = parent.group_type;
+      record.group_type = record.group_type || parent.group_type;
+      record.group_id = parent.group_id;
+      record.level > 1 &&
+        !!record.name &&
+        !!dfl &&
+        (parent.combi += !!!parent.combi
+          ? "" + record.name
+          : " + " + record.name);
+      record.level == 1 &&
+        !!record.name &&
+        (parent.combi += !!!parent.combi
+          ? "" + record.name
+          : " + " + record.name);
+      record.level == 1 &&
+        !!!record.isjo &&
+        (record.bundle_category = getBundleCategory(record));
+
+      record.sales_category_context = parent.sales_category_context;
+      record.group_type === "unspecified" && (record.group_type = undefined);
+      !!record.group_type &&
+        record.group_type !== "standalone" &&
+        (record.group_type = parent.group_type + " component");
+      !!record.group_type &&
+        record.group_type === "standalone" &&
+        record.level > 1 &&
+        (record.group_type = parent.group_type + " component");
+      if (record.isjo) {
+        if (record.level > 0) {
+          record.group_type = record.group_type + " jo component";
+          record.sales_category_context = parent.sales_category_context;
+        } else if (record.level == 0) {
+          record.group_type = record.group_type + " jo";
+          record.sales_category_context =
+            parent.group_type == "pack" ? "inpack" : "outofpack";
+        }
+      }
+      record.options = parent.options;
+      if (
+        !!record.sales_category &&
+        (record.sales_category.indexOf("tvservices") > -1 ||
+          record.sales_category.indexOf(
+            "fixed-telephony-options#international-calls"
+          ) > -1)
+      ) {
+        record.options.push(record.name);
+      }
+      order.combi = parent.combi;
+      record.combi = order.combi;
+      parent.options = record.options;
+      record.category = !!parent.category    ? parent.category == record.category      ? product.category      ? product.category       : "product"   : parent.category +     " " +       (product.category ? product.category : "product")        : undefined;
+    } else {
+      var bundlecategory = !!product.category
+        ? product.category
+        : !!product.id && product.id !== ""
+        ? product.id
+        : "";
+      if (bundlecategory === "standalone") {
+        toAdd = false;
+      } else if (bundlecategory === "unspecified") {
+        toAdd = false;
+      } else if (bundlecategory === "pack") {
+        record.sales_category_context = "inpack";
+        record.product_up = "0";
+      } else if (bundlecategory === "mcs_joint_offer") {
+        bundlecategory = "jo";
+      }
+
+      record.group_type =
+        bundlecategory === "unspecified" ? undefined : bundlecategory;
+      record.group_main = record.group_type;
+      order.order_cumulated = !!order.order_cumulated
+        ? order.order_cumulated + " + " + record.group_main
+        : record.group_main;
+      order.combi = record.combi;
+      record.group_id = product.name;
+      record.category = !!record.group_type     ? record.group_type == product.type     ? product.type
+          : record.group_type + (!!product.type ? " " + product.type : "")
+        : undefined;
+      parent = record;
+    }
+    record.sales_category_ctx =
+      !!record.sales_category && cnt(record.sales_category, "#") < 4      ? record.sales_category + "#na"     : record.sales_category;
+    record.sales_category_ctx = !!record.sales_category_ctx  ? record.sales_category_ctx + "#" + record.sales_category_context     : record.sales_category_ctx;
+    record.subcat = record.cumulated || product.category;
+   
+    !!toAdd && out.push(record);
+    var sp;
+    if ((sp = product.products)) {
+      if (Object.prototype.toString.call(sp) !== "[object Array]") {
+        product.products = [product.products];
+        sp = product.products;
+      }
+      var spl = sp.length;
+      for (var i = 0; i < spl; i++) {
+        var p = sp[i];
+        p.level = record.level + 1;
+        p.isjo = record.isjo || false;
+        parseProduct(p, parent, out, order);
+      }
+    }
+
+    return out;
+  }
+
+  function cnt(str, schar) {
+    return str.length - str.replace(RegExp(schar, "gm"), "").length;
+  }
+
+  function parseProducts(products) {
+    var out = [];
+    var order = { combi: undefined, order_cumulated: undefined };
+    products = productToLowerCase(products);
+    var pl = products.length;
+    for (var i = 0; i < pl; i++) {
+      var p = products[i];
+      p.bundleid = "id" + i;
+      parseProduct(p, undefined, out, order);
+    }
+    var lng = out.length;
+
+    var funneldetails = {};
+    var funneldetailsorder = [];
+    for (var x = 0; x < lng; x++) {
+      var prod = out[x];
+      var bc = prod.bundle_category;
+      var bid = prod.bundleid;
+      if (!!bc && !!bid) {
+        if(!!!funneldetails[bid]){
+          funneldetailsorder.push(bid);
+        }
+        funneldetails[bid] = funneldetails[bid] || [];
+        funneldetails[bid].push(bc);
+      }
+    }
+    var funnelNames = [];
+    var funnelTypes = [];
+    for(var v=0;v<funneldetailsorder.length;v++){
+      var key = funneldetailsorder[v];
+      var value = funneldetails[key].sort();
+      var valueLength = value.length;
+      if (valueLength > 1) {
+        value.unshift(valueLength + 'p');
+      }
+      value = value.join('-');
+      funnelTypes.push(valueLength > 1 ? valueLength + 'p' : value);
+      funnelNames.push(value);
+    }
+    funnelTypes = funnelTypes.sort().join('+');
+    funnelNames = funnelNames.sort().join('+');
+    for (var i = 0; i < lng; i++) {
+      out[i].order_cumulated = order.order_cumulated;
+      out[i].combi = order.combi || "";
+      out[i].options = out[i].options || [];
+      out[i].options = out[i].options.sort().join(" + ") || "";
+      out[i].order_cumulated_bundletypes =funnelTypes;
+      out[i].order_cumulated_bundledetails =funnelNames;
+    }
+
+    return out;
+  }
+}   
+)(__);
+});</script><script>_satellite["_runScript6"](function(event, target, Promise) {
+(function() {
+  var env = _satellite.getVar('Adobe Launch Environment');
+  
+	var pipeline = [];
+	function PxDatalayer() {
+		var arr = [];
+		if (Array.isArray(arguments[0])) {
+			arr.or = arr.concat(arguments[0]);
+		}
+		arr.__proto__ = PxDatalayer.prototype;
+     /* disable since the issue is fixed in prod 10/06
+      if(!!env && env != 'development' && env !='staging'){
+        Object.defineProperty(arr,"push",{
+            set:function(v){console.warn('do not monkey patch the push method!!!');
+            },
+            get: function () {
+              return PxDatalayer.prototype.push;
+            }
+        });
+      }
+      */
+
+		return arr;
+	}
+	PxDatalayer.prototype = new Array();
+	PxDatalayer.prototype.start = function() {};
+	PxDatalayer.prototype.use = function(fn) {
+		if (typeof fn == "function") {
+			pipeline.push(fn);
+		}
+		return this;
+	};
+	PxDatalayer.prototype.emit = function(type, data) {
+		var that = this;
+		var tmp = undefined;
+		pipeline.forEach(function(fn) {
+			var arg = tmp || data;
+			var xtmp = fn.call(that, arg);
+			!!xtmp && (tmp = xtmp);
+		});
+		return this;
+	};
+  PxDatalayer.prototype.globalData = {};
+	PxDatalayer.prototype.q = [];
+	var p = PxDatalayer.prototype.push;
+	PxDatalayer.prototype.push = function(data) {
+		if (!!this.or && this.or.length > 0) {
+			var ele = false;
+			while ((ele = this.or.shift())) {
+				if (!!ele) {
+					this.emit("push", ele);
+					p.apply(this, [ele]);
+				}
+			}
+		} else {
+			delete this.or;
+		}
+		this.emit("push", data);
+		p.apply(this, arguments);
+		return this;
+	};
+
+	window.PxDatalayer = PxDatalayer;
+	var odl = window.pxdatalayer || [];
+	var pxdatalayer = new PxDatalayer(odl);
+        //prettier-ignore
+    function safeJSONParse(v){var o=void 0;try{o=JSON.parse(v)}catch(e){}return o}
+    //prettier-ignore
+    function isJSONText(v){return!!("string"==typeof v&&v.indexOf("{")>-1&&/^[\[|\{](\s|.*|\w)*[\]|}]$/.test(v))}
+    //prettier-ignore
+    function ObjectIsElement(obj){var IsElem=!0;return null==obj?IsElem=!1:"object"!=typeof obj.appendChild&&"function"!=typeof obj.appendChild?IsElem=!1:-1==(obj.appendChild+"").replace(/[\r\n\t\b\f\v\xC2\xA0\x00-\x1F\x7F-\x9F ]/gi,"").search(/\{\[NativeCode]}$/i)?IsElem=!1:1!=obj.nodeType&&(IsElem=!1),IsElem}
+    // correctly parse values
+    function jsonReplacer(k,v){
+        if(!!v && isJSONText(v)){
+            return safeJSONParse(v);
+        }
+        if(!!v && ObjectIsElement(v)){
+          return  getClickData(v) || 'dom node' 
+      }
+        return v;
+    }
+    //make a 'copy' of the input and transform any json values
+    function transformJSONValues(o){
+        var output;
+        var out = JSON.stringify(o,jsonReplacer);
+        if(!!out){
+            output = safeJSONParse(out);
+            !!!output && (output = o);
+        }else{
+            output = o;
+        }
+        return output;
+    }
+  pxdatalayer.use(function(e){
+    var e = transformJSONValues(e);
+    return e;
+  });
+  //enrich with customer details
+    pxdatalayer.use(function(e){
+      try{
+      var custDetails = window.__.customer.getCustomerdetails(e);
+      if(custDetails && !!custDetails.customeridHash){
+        e.customer = e.customer || {};
+        e.customer.idHashed = custDetails.customeridHash;
+        if(!!custDetails.customerid) {e.customer.id = custDetails.customerid;}
+        e._cust = custDetails;
+      }
+       if(custDetails && !!custDetails.globalid){
+        e.user = e.user || {};
+        e.user.globalid = custDetails.globalid;
+      }
+      if(custDetails && !!custDetails.msisdnHash){
+        e.user = e.user || {};
+        e.user.msisdnHash = custDetails.msisdnHash;
+      }
+      }catch(error){}
+    
+    return e;
+  });
+	pxdatalayer.use(function(e) {
+        var data = [];
+        if (!!e && !!e.bundled && e.bundled.products && e.bundled.products.length>0) {
+            data = __.parseProducts(e.bundled.products);
+        }
+        else if (!!e && !!e.bundled_products && e.bundled_products.length>0) {
+            data = __.parseProducts(e.bundled_products);
+		}
+      else if(!!e && !!e.product && !!e.product.length>0){
+       
+        if(!!e.product[0] && !!!e.product[0].processed){
+          data = __.parseProducts(e.product);
+          delete(e.product);
+        }
+      }
+        else if (!!e && !!e.products && e.products.length>0) {
+            if(!!e.products[0] && !!!e.products[0].processed){
+              //this is unparsed product data
+               data = __.parseProducts(e.products);
+            }else{
+              //this data has been processed
+              data = e.products;
+            }
+		}
+      if(data.length>0){
+        this.globalData['products'] = data;
+        e.products = data;
+      }else{
+        if(!!this.globalData && !!this.globalData['products']){
+          e.products = this.globalData['products'] || data;
+        }else{
+          e.products = data;
+        }
+      }
+		return e;
+	});
+
+  	pxdatalayer.use(function(e) {
+		if (!!e && !!!e.event) {
+          //workaround for missing event in mypx reskin
+            if(!!e.action && !!e.action.name){
+              var type = !!e.button ? 'button' : 'link';
+              e.event = type+'-click';
+            }else if(e.event=='page_view'){
+              e.event = 'page-impression';
+              _satellite.logger.warn('page_view event detected while it should be page-impression');
+            }else{
+			e.event = "internal-event";
+            }
+		}
+      });
+  pxdatalayer.use(function(e){
+  //card-scriptloaded|binkies interactive|apple – iphone 12 64gb red	6206
+    //exlude binkies events...
+    if(!!e && !!e.card && !!e.card.zone && e.card.zone == "binkies interactive"){
+      _satellite.logger.log('blocking binkies events',e);
+      e.event='abort';
+      return e;
+    }
+  });  
+	pxdatalayer.use(function(e) {
+      function checkCockpit() {
+        //for debugging
+        var debug = window.location.href.indexOf('cockpit=true')>-1;
+    //search for <meta property="px:app_context" content="dof"/>
+    var tag = document.querySelector('meta[property="px:app_context"]');
+    if (tag) {
+      var value = tag.getAttribute("content");
+      !!value && (value = value.toLowerCase());
+      !!value && (value = value.match(/(dof|hot|arc|partners)/gi));
+      !!value && (value = value.join(''));
+      if (!!value) {
+        return value;
+      }
+    }
+        if(!!debug){return true}
+    return undefined;
+  }
+		if (!!e && !!e.event && e.event!='abort') {
+          var c = JSON.parse(JSON.stringify(e));
+          if(!!!checkCockpit()){
+            		
+			c.eventname = c.event + "";
+			c.event = "datalayer-push";
+			this.q.push(c);
+          }else{
+      var data = {
+          event:'iframe-push',
+          event_context:'launch',
+          iframe:c
+      };
+      data = JSON.stringify(data);
+              //check if the page is visible, we do not want to send stuff when it is not visible
+      if(!!document && !!document.body && !!document.body.offsetHeight){
+      !!window.top && window.top != window && window.top.postMessage('tms$'+data,'*');
+      }
+          }
+		}
+	});
+
+  
+pxdatalayer.use(function(e) {
+  function getPage(){
+  var page = window.pxdatalayer && window.pxdatalayer.q && window.pxdatalayer.q.computedState && window.pxdatalayer.q.computedState.page ? window.pxdatalayer.q.computedState.page : {};
+  page.url =page.url || document.location.href;
+  return page
+}
+    this.counters = this.counters || {};
+    if(!this.counters['pageviews']){ 
+        this.counters['pageviews'] = new __.SW({name:'HELLO',getPage:getPage});
+        this.counters['pageviews'].start();
+    }
+    if(!!e && !!e.event && e.event == 'page-impression'){
+        var duration = this.counters['pageviews'].stop();
+        console.log('page-impression details',duration,e);
+         this.counters['pageviews'].start();
+         e.timeSincePreviousPageView = duration.elapsed;
+    }
+    return e;
+
+});
+	pxdatalayer.start();
+
+	if (
+		"defineProperty" in Object &&
+		"getOwnPropertyDescriptor" in Object &&
+		!!Object.getOwnPropertyDescriptor(window, "pxdatalayer") &&
+		!!Object.getOwnPropertyDescriptor(window, "pxdatalayer").configurable
+	) {
+		Object.defineProperty(window, "pxdatalayer", {
+			configurable: true,
+			get: function() {
+				return pxdatalayer;
+			},
+			set: function() {
+				console.error(
+					"Tag Management: Massive meltdown! Please do not redefine the pxdatalayer variable. pxdatalayer=[] should be added in the head before the script include 🙃"
+				);
+			}
+		});
+	} else {
+		window.pxdatalayer = pxdatalayer;
+	}
+})();
+});</script><script>_satellite["_runScript7"](function(event, target, Promise) {
+!function(root,globalName){function RequestManager(){var currentUrl;Object.defineProperty(this,"currentUrl",{get:function(){return this.checkCurrentUrl(currentUrl||document.location.href)},set:function(url){return currentUrl=url,this.checkCurrentUrl(url)}}),this.validateUrl=function validateUrl(url){if(!url)return!1;if(!!url &&  typeof url == 'string' && 0==url.indexOf("http")&&-0!==url.indexOf("//")){var thisUrlDetails=this.parseUri(url),thisUrlTLD=thisUrlDetails.tld;if(this.currentUrl.tld!=thisUrlTLD&&-1==this.whitelistDomains.indexOf(thisUrlDetails.host)||this.blacklistDomains.indexOf(thisUrlDetails.host)>-1)return!0}return!1},this.checkUrl=function checkUrl(url){return this.validateUrl(url)&&(url=this.sanitizeUrl(url)),url},this.intercept=function intercept(){this.interceptDOM(),this.interceptXHR(),this.interceptFetch(),this.interceptSendBeacon()},this.restore=function restore(){this.restoreDOM(),this.restoreXHR(),this.restoreFetch(),this.restoreSendBeacon()}}var rmproto=RequestManager.prototype;rmproto.whitelistKeys=[],rmproto.whitelistDomains=[],rmproto.blacklistDomains=[],rmproto.checkCurrentUrl=function checkCurrentUrl(url){url&&(url=this.parseUri(url));var outArray=urlQSArray=hashArray=[];url.query&&(urlQSArray=url.query.split("&"));var hash=url.anchor?url.anchor.split("?")[1]:void 0;(hash=hash||(url.anchor&&url.anchor.indexOf("=")>-1?url.anchor:void 0))&&hash.length>0&&hash.indexOf("=")>-1&&(hashArray=hash.split("&")),outArray=[].concat(urlQSArray,hashArray),this.whitelistKeys=this.whitelistKeys||[];for(var newQSList=[],index=0;index<outArray.length;index++){var element=outArray[index];if(element&&element.indexOf("=")>-1){var key=element.replace(/=.*/,"");-1==this.whitelistKeys.indexOf(key)&&(newQSList.push(element),newQSList.push(encodeURIComponent(element)))}}outArray=newQSList,url.qslist=outArray&&outArray.length>0?outArray:void 0;var qstring=outArray?"("+outArray.join("|")+")":void 0;return url.qsrx=qstring&&"(|)"!=qstring&&"()"!=qstring?new RegExp(qstring,"gmi"):void 0,url},function(root){function getHostAndPath(url){var match=/([^\/]*:?\/\/)?([^\/^?]*)([^?]*)?/.exec(url);if(match){for(var host=match[2],path=match[3]?match[3].split("/"):[],filteredpath=[],i=0;i<path.length;i++){var p=path[i];p&&filteredpath.push(p)}return{host:host,path:filteredpath}}}function getQueryAndHash(url){var o={query:"",hash:""},indexOfQuestionSign=indexOf("?",url),indexOfHash;if(-1!==indexOfQuestionSign){var source=url.slice(indexOfQuestionSign+1),indexOfHash;if(source)-1!==(indexOfHash=indexOf("#",source))&&(source=source.slice(0,indexOfHash)),o.query=source}if(-1!==(indexOfHash=indexOf("#",url))){var hash=url.slice(indexOfHash+1);o.hash=hash}return o}function parse(url){var hp=getHostAndPath(url),qh=getQueryAndHash(url),host=hp.host,path,query,hash,tld,h,result;return{host:host,path:hp.path,query:qh.query,anchor:qh.hash,tld:((h=(h=host)?h.split("."):[]).length>2&&(h=[h[h.length-2],h[h.length-1]]),h.join("."))}}function decode(component){try{return decodeURIComponent(component)}catch(e){return component}}function indexOf(string,context){return context.indexOf(string)}root.parseUri=parse}(rmproto),rmproto.sanitizeUrl=function sanitizeUrl(url){var outurl=url,regx=this.currentUrl.qsrx;return url?(regx&&(outurl=url.replace(regx,(function sanitizeReplace(){var value=arguments[0];return 3==(value=value.split(/(%3D|=)/)).length&&value.pop(),value.push("x"),value.join("")}))),outurl):url},rmproto.interceptDOM=function interceptDOM(){var that=this;if(rmproto._interceptDOM)return!0;for(var _interceptDOM={},DOMELEMENTS=["HTMLImageElement","HTMLIFrameElement","HTMLScriptElement"],index=0;index<DOMELEMENTS.length;index++){var element=DOMELEMENTS[index];_interceptDOM[element]=Object.getOwnPropertyDescriptor(window[element].prototype,"src"),Object.defineProperty(window[element].prototype,"src",{configurable:!0,set:srcHandler})}function srcHandler(src){var url=that.checkUrl(src);url&&this.setAttribute("src",url)}return rmproto._interceptDOM=_interceptDOM,this},rmproto.restoreDOM=function restoreDOM(){if(rmproto._interceptDOM)for(var key in rmproto._interceptDOM)if(rmproto._interceptDOM.hasOwnProperty(key)){var element=rmproto._interceptDOM[key];Object.defineProperty(window[key].prototype,"src",element)}},rmproto.interceptFetch=function interceptFetch(){var that=this;if(!("fetch"in window&&"function"==typeof window.fetch)||this._fetch)return!1;rmproto._fetch=window.fetch,window.fetch=function interceptFetch(url,options){return url&&(url=that.checkUrl(url)),that._fetch.apply(this,[url,options])}},rmproto.restoreFetch=function restoreFetch(){window.fetch=this._fetch},rmproto.interceptSendBeacon=function interceptSendBeacon(){if(!window.navigator||!window.navigator.sendBeacon||"function"!=typeof window.navigator.sendBeacon||this._navigatorSendBeacon)return!1;var that=this;rmproto._navigatorSendBeacon=window.navigator.sendBeacon,window.navigator.sendBeacon=function interceptNavigatorSendBeacon(url,data){return url&&(url=that.checkUrl(url)),that._navigatorSendBeacon.apply(this,[url,data])}},rmproto.restoreSendBeacon=function restoreBeacon(){this._navigatorSendBeacon&&(window.navigator.sendBeacon=this._navigatorSendBeacon)},rmproto.interceptXHR=function interceptXHR(urlmatch,callback,once){var that=this;rmproto._XHROpen=XMLHttpRequest.prototype.open,rmproto._XHRSend=XMLHttpRequest.prototype.send,XMLHttpRequest.prototype.open=function interceptOpen(method,url,async,user,password){void 0===async&&(async=!0),url&&(this._originalUrl=url,url=that.checkUrl(url)),that._XHROpen.apply(this,[method,url,async,user,password])},XMLHttpRequest.prototype.send=function interceptSend(body){var url=this.responseURL||this._originalUrl;body&&"string"==typeof body&&url&&that.validateUrl(url)&&(body=that.sanitizeUrl(body)),that._XHRSend.apply(this,[body])}},rmproto.restoreXHR=function restoreXHR(){this._XHROpen&&(XMLHttpRequest.prototype.open=this._XHROpen),this._XHRSend&&(XMLHttpRequest.prototype.send=this._XHRSend)},globalName=globalName||"_rqmgr",window[globalName]=new RequestManager}(window,"_rqmgr");
+window._rqmgr.whitelistKeys = ['v1','v2','v3','v4','v5','v6','v7','v8','rid','lang','pricingplan','pricingPlan','mobile','television','fixed','tvoption','pack','state','execution','select','ismypxs','city'];
+//additional whitelisting for webforms
+//check if this is a webform
+if(!!window.utag_data && !!window.utag_data.page_category_l2 && window.utag_data.page_category_l2.toLowerCase() == 'forms'){
+    window._rqmgr.whitelistKeys.push('mobile');
+    window._rqmgr.whitelistKeys.push('callconnectlicence');
+    window._rqmgr.whitelistKeys.push('internetguarantee');
+    window._rqmgr.whitelistKeys.push('proximustv');
+    window._rqmgr.whitelistKeys.push('tvbonus');
+    window._rqmgr.whitelistKeys.push('tvreplayplus');
+    window._rqmgr.whitelistKeys.push('bizzonline');
+     window._rqmgr.whitelistKeys.push('eoy');
+}
+window._rqmgr.whitelistDomains = ['skynet.be','trustarc.com','maps.googleapis.com'];//domain+subdomains, no protocol
+window._rqmgr.blacklistDomains = ['smetrics.proximus.be','metrics.proximus.be'];//domain+subdomains, no protocol
+window._rqmgr.intercept();
+});</script><script>_satellite["_runScript8"](function(event, target, Promise) {
+(function() {
+  // prettier-ignore
+  var matches=function matches(elem,selector){var p=Element.prototype,f;return(p.matches||p.webkitMatchesSelector||p.mozMatchesSelector||p.msMatchesSelector||function(s){return-1!==[].indexOf.call(document.querySelectorAll(s),this)}).call(elem,selector)};
+  // prettier-ignore
+  var closest=function closest(elem,selector){if(elem.closest)return elem.closest(selector);for(;elem;){if(matches(elem,selector))return elem;elem=elem.parentElement}return null};
+  // prettier-ignore
+  var clean=function clean(){function removeAccents(str){var accents="ÀÁÂÃÄÅàáâãäåÒÓÔÕÕÖØòóôõöøÈÉÊËèéêëðÇçÐÌÍÎÏìíîïÙÚÛÜùúûüÑñŠšŸÿýŽž",accentsOut="AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz",strLen=(str=str.split("")).length,i,x;for(i=0;i<strLen;i++)-1!=(x=accents.indexOf(str[i]))&&(str[i]=accentsOut[x]);return str.join("")}function replace(string){if("string"!=typeof string)return string;var slug=string.replace(/[,*+~.()'"?!:@]/gm,"").replace(/^\s+|\s+$/g,"").replace(/[-\s]+/g,"-").replace(/[\u1000-\uFFFF]+/g,"").replace(/(^-)|(-$)/g,"");return(slug=slug.normalize&&"function"==typeof slug.normalize?slug.normalize("NFD").replace(/[\u0300-\u036f]/g,""):removeAccents(slug)).toLowerCase()}return replace}();
+  // prettier-ignore
+  var getTxt=function getTxt(){var text="innerText"in document.createElement("div")?"textContent":"textContent";return function getTxt(el){return el?el[text]:null}}();
+  // prettier-ignore
+  function extend(){var extended={},deep=!1,i=0;"[object Boolean]"===Object.prototype.toString.call(arguments[0])&&(deep=arguments[0],i++);for(var merge=function(obj){for(var prop in obj)obj.hasOwnProperty(prop)&&(deep&&"[object Object]"===Object.prototype.toString.call(obj[prop])?extended[prop]=extend(extended[prop],obj[prop]):extended[prop]=obj[prop])};i<arguments.length;i++)merge(arguments[i]);return extended}
+  // prettier-ignore
+  function unflatten(target,opts){var delimiter=(opts=opts||{}).delimiter||".",overwrite=opts.overwrite||!0,result={},sortedKeys;if("[object Object]"!==Object.prototype.toString.call(target))return target;function getkey(key){var parsedKey=Number(key);return isNaN(parsedKey)||-1!==key.indexOf(".")||opts.object?key:parsedKey}return Object.keys(target).sort((function(keyA,keyB){return keyA.length-keyB.length})).forEach((function(key){for(var split=key.split(delimiter),key1=getkey(split.shift()),key2=getkey(split[0]),recipient=result;void 0!==key2;){var type=Object.prototype.toString.call(recipient[key1]),isobject="[object Object]"===type||"[object Array]"===type;if(!overwrite&&!isobject&&void 0!==recipient[key1])return;(overwrite&&!isobject||!overwrite&&null==recipient[key1])&&(recipient[key1]="number"!=typeof key2||opts.object?{}:[]),recipient=recipient[key1],split.length>0&&(key1=getkey(split.shift()),key2=getkey(split[0]))}recipient[key1]=unflatten(target[key],opts)})),result}
+  // prettier-ignore
+  function getAttributes(el){if(el){for(var out={},att=el.attributes,i=0;i<att.length;i++){var el=att[i];(t=el.name.replace("data-tms-",""))!=el.name&&(0!=t.indexOf("event-")&&(t=t.replace(/-/gm,".")),out[t]=((el.value || '').toLowerCase()))}return i>0?out:{}}}
+  // prettier-ignore
+  function getComponentName(event){if(event){var component=event||"";return(component=component.split("-")).shift()}}
+  // prettier-ignore
+  function getImageDataFromElement(clickable){var img=clickable.querySelector("img");if(img){var ra=null;if(t=img.alt,t=t&&""!==t?t:img.src,t=t.indexOf("/")>-1&&(ra=/.*\/(.*?)\.\w*$/.exec(t))?ra[1]:t,t)return t}} // prettier-ignore
+  // prettier-ignore
+  function getIconDataFromElement(clickable){var is=clickable.getElementsByTagName("i");if(is.length>0){var tn=is[0].className,x=!1,t=!1;if(t=(x=/.*?icon-([^ \n]*)/.exec(tn))?x[1]:t)return t}}
+  // prettier-ignore
+  function getAutoTrackingData(el){var imgData=clean(getImageDataFromElement(el));if(imgData)return imgData;var txtData=clean(getTxt(el));if(txtData)return txtData;var iconData=clean(getIconDataFromElement(el));return iconData||void 0}
+  // prettier-ignore
+  function isEmptyObject(value){if(null==value)return!0;for(var key in value)if(hasOwnProperty.call(value,key))return!1;return!0}
+  //prettier-ignore
+  function contains(context,node){return context.contains?context.contains(node):context.compareDocumentPosition?context===node||!!(16&context.compareDocumentPosition(node)):void 0}
+      //prettier-ignore
+    function safeJSONParse(v){var o=void 0;try{o=JSON.parse(v)}catch(e){}return o}
+    //prettier-ignore
+    function isJSONText(v){return!!("string"==typeof v&&v.indexOf("{")>-1&&/^[\[|\{](\s|.*|\w)*[\]|}]$/.test(v))}
+    //prettier-ignore
+    function ObjectIsElement(obj){var IsElem=!0;return null==obj?IsElem=!1:"object"!=typeof obj.appendChild&&"function"!=typeof obj.appendChild?IsElem=!1:-1==(obj.appendChild+"").replace(/[\r\n\t\b\f\v\xC2\xA0\x00-\x1F\x7F-\x9F ]/gi,"").search(/\{\[NativeCode]}$/i)?IsElem=!1:1!=obj.nodeType&&(IsElem=!1),IsElem}
+    // correctly parse values
+    function jsonReplacer(k,v){
+        if(!!v && isJSONText(v)){
+            return safeJSONParse(v);
+        }
+        if(!!v && ObjectIsElement(v)){
+          return  getClickData(v) || 'dom node' 
+      }
+        return v;
+    }
+    //make a 'copy' of the input and transform any json values
+    function transformJSONValues(o){
+        var output;
+        var out = JSON.stringify(o,jsonReplacer);
+        if(!!out){
+            output = safeJSONParse(out);
+            !!!output && (output = o);
+        }else{
+            output = o;
+        }
+        return output;
+    }
+  window.__ = window.__ || {};
+  window.__.clickTracker = {
+    contains:contains,
+    closest: closest,
+    matches: matches,
+    getTxt: getTxt,
+    extend: extend,
+    unflatten: unflatten,
+    getAttributes: getAttributes,
+    getComponentName: getComponentName,
+    getImageDataFromElement: getImageDataFromElement,
+    getIconDataFromElement: getIconDataFromElement,
+    getAutoTrackingData: getAutoTrackingData,
+    getClickData: getClickData,
+    handleEvent: clickHandler
+  };
+
+  function clickHandler(event) {
+    var el = event.target;
+    if(el){
+        var x = getClickData(el);
+        if(!!x && !isEmptyObject(x) && !!window.pxdatalayer){
+          x = transformJSONValues(x);
+          window.pxdatalayer.push(x);
+        }
+    }
+    return true;
+    
+  }
+  function getLegacyAutoTagData(el,boundary){
+    //this use case handles the old data-tms-id situation
+    //the boundary being defined on the element with a data tms id      
+    var out;
+    var tmsId = boundary.getAttribute("data-tms-id").toLowerCase().replace("tms_", "");
+    var event = "link-click";
+    var component = "link";
+    var selectorsClickable = [
+      "a,button",
+      ".rs-clickable",
+      ".jsrs-clickable",
+      ".rs-box-clickable"
+    ].join(",");
+    var clickable = closest(el, selectorsClickable);
+    if (clickable) {
+      if (!(clickable.nodeName == "A" || clickable.nodeName == "BUTTON")) {
+        var clickablechild = clickable.querySelector("a,button");
+        clickable = clickablechild ? clickablechild : clickable;
+      }
+      var clickableData = getAutoTrackingData(clickable);
+      if (clickableData) {
+        var x = getAttributes(clickable);
+        x = unflatten(x);
+        x.event = event;
+        x[component] = x[component] || {};
+        x[component].zone = tmsId;
+        x[component].text = clickableData;
+        return(x);
+      }
+    }
+    return out;
+  }
+  
+  function getNewAutoTagData(el,boundary){
+    var out;
+    if (boundary == el) {
+      return unflatten(getAttributes(el));
+    } else {
+      var pnode = el;
+      var linkDetected = false;
+      var data = [];
+      while (pnode && pnode != boundary) {
+        var dt = getAttributes(pnode);
+        if (isEmptyObject(dt) && pnode.nodeName == "A" || pnode.nodeName == "BUTTON") {
+          var text = getAutoTrackingData(pnode);
+          dt["link.text"] = text;
+          clickable = pnode;
+          linkDetected = true;
+        }
+        data.unshift(dt);
+        pnode = pnode.parentNode;
+      }
+      if (!linkDetected) {
+        var jsclickable = closest(el, ".jsrs-clickable,.rs-clickable");
+        if (jsclickable) {
+          var jsclickablechild = jsclickable.querySelector("a,button");
+          if (jsclickablechild) {
+            var dt = getAttributes(jsclickablechild);
+            var text = getAutoTrackingData(jsclickablechild);
+            dt["link.text"] = text;
+            data.push(dt);
+          }
+        }
+      }
+      data.unshift(getAttributes(boundary));
+      x = extend.apply(extend, data);
+      x = unflatten(x);
+      return x;
+    }
+  }
+
+  function getBasicAutoTagData(el){
+         //this use case is there when no tms id's nor proper data attributes are found
+        //this is the most basic way of fetching click details
+        var boundary = closest(el, "a,button");
+        if (!!boundary) {
+          var dt = getAttributes(boundary);
+          var data = getAutoTrackingData(boundary);
+          if (!!data) {
+                dt.event = "link-click";
+                dt.link = dt.link || {};
+                dt.link.text = dt.link.text || data;
+                return dt;
+               
+            }
+        }
+        return undefined;
+  }
+
+  function getClickData(el) {
+    //return empty object when no element is specified
+    if (!el) {
+      return false;
+    }
+   
+    //this part is for the manually defined tracking
+    //it uses the data attributes as a guidance to get the data
+    var boundary = closest(el, '[data-tms-event*="-click"]');
+    var component = !!boundary ?  getComponentName(boundary.getAttribute("data-tms-event")) : "link"; //get the actual component or default to 'link'
+    var noclick = closest(el, "[data-tms-noclick]");
+    
+    if (!!boundary) {
+      if(!!noclick && contains(boundary,noclick)){
+        _satellite.logger.log('Noclick within boundary found. Abort');
+        return false;
+      }
+      x = getNewAutoTagData(el,boundary);
+      x._meta = x._meta || {};
+      x._meta.taggingType = "html";
+    } else {
+     //check if the element's parent does not have the attribute data-tms-noclick,else bail, we do not track these
+      if (!!noclick) {
+        _satellite.logger.log('Noclick found. Abort');
+        return false;
+      }
+      var boundary = closest(el, "[data-tms-id]");
+      if (!!boundary) {
+        x = getLegacyAutoTagData(el,boundary);
+        if(!!x){
+          x._meta = x._meta || {};
+          x._meta.taggingType = "legacy";
+        }
+      } else {
+        x =  getBasicAutoTagData(el);
+        if(!!x){
+            x._meta = x._meta || {};
+            x._meta.taggingType = "basic";
+        }
+      }
+    }
+    if (!!x && !!x[component] && (!!x[component].name || !!x[component].text)) {
+        if(!!x[component].name ){
+            x[component].name  = clean(x[component].name );
+        }
+        x._meta.component = component;
+        x.event = component + "-click";
+        //workaround for funnel-click added 09/07
+        // when a funnel click happens without a button or link element then abort
+        if(component == 'funnel' && (!!!x.button && !!!x.link)){
+            return false;
+        }
+        return x;
+    }
+    return false;
+  }
+  //the following section checks if the addEventHandler has been instrumented by Angular Zone.js
+  // if it has been, we check if the native addEventListener is available and use that one.
+  // this would make sure that there is no interference from ANgular with our code and should have a small perf boost.
+  // AngularJS EVIL
+  /* prettier-ignore-start */
+  var de = document.documentElement;
+  var aavl = window.__zone_symbol__addEventListener;
+  if (!!aavl && typeof aavl == "function" ) {
+    aavl.call( de, "mousedown", window.__.clickTracker,true );
+  } else {
+    de.addEventListener("mousedown", window.__.clickTracker,true);
+  }
+  /* prettier-ignore-end */
+})();
+
+});</script><script>_satellite["_runScript9"](function(event, target, Promise) {
+var previouspage = _satellite.cookie.get('gpv_v18');
+
+if(!!previouspage){
+     _satellite.logger.log('The previous page was',previouspage);
+    _satellite.setVar('_Previous Page',previouspage);
+  _satellite.cookie.remove('gpv_v18');
+}
+
+});</script><script>_satellite["_runScript10"](function(event, target, Promise) {
+/*
+ *Name: Adobe Target CS Integration
+ *Version: 1.3
+ */
+(function () {
+    var tvp = "AB_AT_";
+    var tokens = "";
+
+    function sendToCS(csKey, csValue) {
+        csKey = tvp + csKey;
+
+        window._uxa = window._uxa || [];
+        _uxa.push(["trackDynamicVariable", {
+            key: csKey,
+            value: csValue
+        }]);
+    }
+
+    function removeDuplicates(myArr, prop) {
+        var mappedObj = {};
+        return myArr.filter(function (obj, pos, arr) {
+            var val = obj[prop]
+            if (mappedObj[val]) {
+                return false;
+            }
+            return (mappedObj[val] = true);
+        });
+    }
+
+    function init() {
+        if (window.CS_CONF) {
+
+            CS_CONF.integrations_handler = CS_CONF.integrations_handler || {};
+            CS_CONF.integrations_handler.adobe_target_tokens = [];
+
+            var uniqueTokens = removeDuplicates(tokens, "activity.name");
+            if (uniqueTokens) {
+                uniqueTokens.forEach(function (token) {
+                    var campaignName = token["activity.name"];
+                    var experienceName = token["experience.name"];
+
+                    CS_CONF.integrations_handler.adobe_target_tokens.push({
+                        'CampaignName': campaignName,
+                        'ExperienceName': experienceName
+                    });
+
+                    sendToCS(campaignName, experienceName);
+                });
+            }
+        }
+    }
+
+    function getEventData(e) {
+        if (e && e.detail && e.detail.responseTokens) {
+            tokens = e.detail.responseTokens;
+
+            function callback() {
+                if (!disableCallback) {
+                    disableCallback = true;
+                    init();
+
+                    if (window.CS_CONF) {
+                        CS_CONF.integrations = CS_CONF.integrations || [];
+                        CS_CONF.integrations.push("Adobe Target");
+                    }
+                }
+            }
+
+            var disableCallback = false;
+
+            window._uxa = window._uxa || [];
+            _uxa.push(["afterPageView", callback]);
+        }
+    }
+
+    document.addEventListener('at-request-succeeded', getEventData);
+})();
+//Adobe Target CS Integration End
+});</script><script>_satellite["_runScript11"](function(event, target, Promise) {
+(function () {
+  function customAdobetargetTrackEvent(conf) {
+    if (!!conf && !!conf.mbox) {
+      if (conf.mbox == "target-global-mbox") {
+        conf.mbox = "target-event-mbox";
+      }
+    }
+    window.adobe.target._originalTrackEvent(conf);
+  }
+  if (
+    !!window.adobe &&
+    !!window.adobe.target &&
+    !!adobe.target.trackEvent &&
+    !window.adobe.target._originalTrackEvent
+  ) {
+    window.adobe.target._originalTrackEvent = window.adobe.target.trackEvent;
+    window.adobe.target.trackEvent = customAdobetargetTrackEvent;
+  }
+})();
+
+});</script><script>_satellite["_runScript12"](function(event, target, Promise) {
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  window.gtag = window.gtage || gtag;
+  gtag('js', new Date());
+  gtag('config', 'DC-5452414');
+  gtag('config', 'UA-36292445-1', {
+  'send_page_view': false,
+  'groups': 'pickx'
+});
+});</script>
+
+
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+<title>MyProximus- Your Customer Account | Proximus</title>
+<meta name="keywords" content="MyProximus, My Proximus, identify, login, usage check, invoices, payments, reload Pay and Go card, option activation, loyalty advantages, Premium Club">
+    <meta name="description" content="Log into your Customer account MyProximus: identify yourself, check your usage, invoices and payments. Reload your Pay and Go card.&lt;br/&gt;Manage your options and find your offers and loyalty advantages as Premium Club. ">
+<meta name="language" content="EN">
+<meta property="fb:app_id" content="1562423357358982">
+<meta property="fb:admins" content="576702902">
+<meta property="og:type" content="website">
+<meta name="p:domain_verify" content="58c031095c4477e6110a06fe83792125">
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" type="image/x-icon" href="https://www-uat.proximus.be/login/.resources/cdn/brand/logos/favicon~2016-05-09-03-55-13-739~cache.ico">
+    <meta property="og:title" content="MyProximus- Your Customer Account">
+<meta property="og:url" content="https://www-uat.proximus.be/login/en/default.html">
+
+
+    <link rel="canonical" href="https://www-uat.proximus.be/login/en/default.html">
+
+    <meta property="og:description" content="Log into your Customer account MyProximus: identify yourself, check your usage, invoices and payments. Reload your Pay and Go card.&lt;br/&gt;Manage your options and find your offers and loyalty advantages as Premium Club. ">
+                <link rel="alternate" hreflang="en" href="https://www-uat.proximus.be/login/en/default.html">
+                <link rel="alternate" hreflang="fr" href="https://www-uat.proximus.be/login/fr/default.html">
+                <link rel="alternate" hreflang="nl" href="https://www-uat.proximus.be/login/nl/default.html">
+                <link rel="alternate" hreflang="de" href="https://www-uat.proximus.be/login/de/default.html">
+	<link rel="stylesheet" type="text/css" href="./proximus_files/iportal-all-css-pack_2021-08-19-08-16-04-970_cache.css" media="all">
+<!--[if lt IE 9]>
+<link href="/login/.resources/cdn/libs/rslib/css/ie~2021-08-03-13-40-38-000~cache.css  rel="stylesheet" type="text/css">
+<![endif]-->
+
+
+    <script type="text/javascript" src="./proximus_files/proximus-angular-polyfills.min_2021-04-07-20-48-54-817_cache.js.download"></script>
+    <script type="text/javascript" src="./proximus_files/proximus-common-vendor.min_2017-06-11-07-40-09-480_cache.js.download"></script>
+<style>@media screen and (max-width:640px){.itsme-section[_ngcontent-fly-c0]{flex-direction:column-reverse}}</style><script src="./proximus_files/api.js.download" async="" defer=""></script><meta class="foundation-data-attribute-namespace"><meta class="foundation-mq-xxlarge"><meta class="foundation-mq-xlarge"><meta class="foundation-mq-large"><meta class="foundation-mq-medium"><meta class="foundation-mq-small"><style></style><style>INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}@keyframes onautofillstart{from{}}@keyframes onautofillcancel{from{}}
+</style><script src="./proximus_files/RC963477a6d51540b7854650de3baa6ca7-source.min.js.download" async=""></script><script src="./proximus_files/RC1b9ed536cc1a4ca082b621ce8aa0f79a-source.min.js.download" async=""></script><script src="./proximus_files/RCc08afe2453cd4ae0a810594e8e0585ec-source.min.js.download" async=""></script><script src="./proximus_files/RC3df7b50cc7354a81a73da35cb72038f1-source.min.js.download" async=""></script><script src="./proximus_files/RCd65377da43674c9687beeb4c78d934ea-source.min.js.download" async=""></script><script src="./proximus_files/RC0fb3a03fb469476f82af868176770e81-source.min.js.download" async=""></script><style>@keyframes selector-observer-0{from{--selector-observer-0:#fff;}to{--selector-observer-0:#000;}}
+@-webkit-keyframes selector-observer-0{from{--selector-observer-0:#fff;}to{--selector-observer-0:#000;}}
+@-moz-keyframes selector-observer-0{from{--selector-observer-0:#fff;}to{--selector-observer-0:#000;}}
+@-ms-keyframes selector-observer-0{from{--selector-observer-0:#fff;}to{--selector-observer-0:#000;}}
+@-o-keyframes selector-observer-0{from{--selector-observer-0:#fff;}to{--selector-observer-0:#000;}}</style><style>[data-tms-event*="-impression"]{animation-duration:0.001s;animation-name:selector-observer-0;-webkit-animation-duration:0.001s;-webkit-animation-name:selector-observer-0;-moz-animation-duration:0.001s;-moz-animation-name:selector-observer-0;-ms-animation-duration:0.001s;-ms-animation-name:selector-observer-0;-o-animation-duration:0.001s;-o-animation-name:selector-observer-0;}</style><script src="./proximus_files/RC685959f522f84c9f9c19b720439eb0fc-source.min.js.download" async=""></script><script src="./proximus_files/RCaafb4395fe5743748233eaaeebd821aa-source.min.js.download" async=""></script><script src="./proximus_files/RCa950fdf07b5a4feeaf413a6725f7f861-source.min.js.download" async=""></script><script type="text/javascript" async="" src="./proximus_files/e8474b03b5c3c.js.download"></script><script src="./proximus_files/RCc49873bd2d684c0e886c6b5c3606fbf5-source.min.js.download" async=""></script><script src="./proximus_files/RC21639b52b6fb41a9bbad8e4c51397186-source.min.js.download" async=""></script><script src="./proximus_files/RC2a70c8bd92e64d6e99f26a0147961932-source.min.js.download" async=""></script><script async="" src="./proximus_files/hotjar-561467.js.download"></script><script async="" src="./proximus_files/modules.e763089bec9f2503d752.js.download" charset="utf-8"></script><style type="text/css">iframe#_hjRemoteVarsFrame {display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;}</style></head>
+
+<body class="rs-login-page rs-header-transparent rs-header-transparent" style="">
+<script class="at-element-marker">
+function readCookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+var _X_ = {};
+
+_X_.isSHA256 = function isSHA256(inputString) {
+  return /\b[A-Fa-f0-9]{64}\b/.test(inputString);
+};
+
+!function(q){function D(){function a(a){return 4294967296*(a-(a>>>0))|0}var b=0,c=2,d;a:for(;64>b;c++){for(d=2;d*d<=c;d++)if(0==c%d)continue a;8>b&&(h[b]=a(Math.pow(c,.5))),C[b++]=a(Math.pow(c,1/3))}}var h=[],C=[];(q.crypto||(q.crypto={})).sha256=function(a){h[0]||D();var b,c,d,e,n,p,r,k,l,f,m=0,g=[],t=h[0],u=h[1],v=h[2],w=h[3],x=h[4],y=h[5],z=h[6],A=h[7],B;if(b=void 0,"string"==typeof a){for(b=(a=unescape(encodeURIComponent(a))).length,c=0,d=[];c<b;)d[c>>2]=a.charCodeAt(c++)<<24|a.charCodeAt(c++)<<16|a.charCodeAt(c++)<<8|a.charCodeAt(c++);d.len=b,b=(a=d).len}else b=b||a.length<<2;a[b>>2]|=128<<24-(31&(b<<=3)),a[15+(b+64>>9<<4)]=b;for(var q=(B=a).length,E=C;m<q;){for(a=t,b=u,c=v,d=w,e=x,n=y,p=z,r=A,f=0;64>f;)16>f?g[f]=B[m+f]:(k=g[f-2],l=g[f-15],g[f]=(k>>>17^k<<15^k>>>19^k<<13^k>>>10)+(0|g[f-7])+(l>>>7^l<<25^l>>>18^l<<14^l>>>3)+(0|g[f-16])),k=(0|g[f])+r+(e>>>6^e<<26^e>>>11^e<<21^e>>>25^e<<7)+(e&n^~e&p)+E[f++],l=(a>>>2^a<<30^a>>>13^a<<19^a>>>22^a<<10)+(a&b^a&c^b&c),r=p,p=n,n=e,e=d+k|0,d=c,c=b,b=a,a=k+l|0;t+=a,u+=b,v+=c,w+=d,x+=e,y+=n,z+=p,A+=r,m+=16}for(g=(m=[t,u,v,w,x,y,z,A]).length;g--;)m[g]=("0000000"+(m[g]>>>0).toString(16)).slice(-8);return m.join("")}}(_X_);
+ 
+if ($.cookie("selectedCustomerAccountId")!== undefined && utag_data.mkt_event!== undefined) {
+	var arraymkt_event = utag_data.mkt_event;
+	var dataPartnerUuid = _X_.crypto.sha256(readCookie('selectedCustomerAccountId'));
+	var aamUuid=readCookie('aam_uuid');
+	$(document).ready(function(){
+ 		var data = JSON.stringify({
+			"aamUuid":  aamUuid,
+			"dataPartnerUuid": dataPartnerUuid,
+			"segmentIds": arraymkt_event
+			
+		});
+
+		var xhr = new XMLHttpRequest();
+		xhr.withCredentials = true;
+
+		xhr.addEventListener("readystatechange", function () {
+		if (this.readyState === 4) {
+			$("#div1").html(this.responseText);
+		}
+		});
+
+		xhr.open("POST", "https://www-uat.proximus.be/rest/customer-segment/processInboundData");
+		xhr.setRequestHeader("content-type", "application/json");
+
+		xhr.send(data);
+	});
+}
+ 
+</script><div class="off-canvas-wrap">
+    <div class="inner-wrap">
+        <a href="https://www-uat.proximus.be/login/en/?#maincontent" class="show-on-focus rs-skip-to-main">Skip to main content</a>
+<!--googleoff: index-->
+    <div class="rs-header2020-wrapper" data-elastic="index-off">
+        <header role="banner" class="rs-header2020 rs-header-neg" data-header-container="">
+
+<div class="rs-header2020-row">
+    <div class="rs-header2020-columns">
+        <input type="checkbox" id="mobileMenu" class="rs-burger-checkbox" aria-hidden="true" data-header-mobilemenu="">
+<div class="rs-topbar" data-tms-id="TMS_header2020_topbar">
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rs-lang">
+    <a href="javascript:void(0)" role="button" class="rs-btn-lang" aria-label="English" aria-controls="langList" aria-expanded="false" data-header-toggle="toggleOpen" data-tms-noclick="" data-tms-id="tms_angular_ignore">
+        <span class="rs-lang-txt" data-href="/login/en/default.html">EN</span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" class="rs-header-arrow"><path d="M4,12a1,1,0,0,1,.29-.71,1,1,0,0,1,1.42,0L16,21.59l10.29-10.3a1,1,0,0,1,1.42,1.42l-11,11a1,1,0,0,1-1.42,0l-11-11A1,1,0,0,1,4,12Z"></path></svg>
+    </a>
+        <!--dropdown lang-->
+        <ul class="rs-lang-list" aria-label="Choose your language" id="langList" aria-hidden="true">
+                    <li><a href="https://www-uat.proximus.be/login/fr/default.html" hreflang="fr" lang="fr" aria-label="Français">FR</a></li>
+                    <li><a href="https://www-uat.proximus.be/login/nl/default.html" hreflang="nl" lang="nl" aria-label="Nederlands">NL</a></li>
+                    <li><a href="https://www-uat.proximus.be/login/de/default.html" hreflang="de" lang="de" aria-label="Deutsch">DE</a></li>
+        </ul>
+        <!--end dropdown lang-->
+</div>
+	
+
+
+
+
+</div>        <div class="rs-logobar " data-tms-id="TMS_header2020_logobar">
+            <a href="https://www-uat.proximus.be/en/id_personal/personal.html" class="rs-logo" title="Back to the home page">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44.91 44.91" role="img" aria-labelledby="proximus-logo" focusable="false"><title id="proximus-logo">Back to the home page</title><path d="M40.78 14.83c.59-.44 3.82-3.05 4.11-6.75A7.91 7.91 0 0 0 37.15 0h-.32c-3.71.28-6.31 3.52-6.76 4.11a24 24 0 0 0-4.31 10.06 36.49 36.49 0 0 1-6.61 0 24.16 24.16 0 0 0-4.32-10.04C14.39 3.54 11.78.3 8.07 0A7.89 7.89 0 0 0 0 7.76a1.71 1.71 0 0 0 0 .32c.28 3.71 3.51 6.31 4.11 6.76a24 24 0 0 0 10.06 4.31 36.49 36.49 0 0 1 0 6.61 24 24 0 0 0-10.04 4.32c-.6.44-3.83 3-4.11 6.75a7.89 7.89 0 0 0 7.74 8.06h.31c3.71-.28 6.31-3.52 6.76-4.11a24 24 0 0 0 4.31-10.06 36.49 36.49 0 0 1 6.61 0 24 24 0 0 0 4.32 10.06c.44.59 3 3.82 6.75 4.11a7.9 7.9 0 0 0 8.06-7.74 1.71 1.71 0 0 0 0-.32c-.28-3.71-3.51-6.31-4.11-6.76a24 24 0 0 0-10.06-4.31c-.1-1.08-.15-2.19-.15-3.31s.06-2.23.15-3.3a24.07 24.07 0 0 0 10.07-4.32zm-6.29-7.22l.08-.1a5 5 0 0 1 2.7-1.89c.16 0 .6 0 1.33.69s.69 1.16.68 1.33a4.94 4.94 0 0 1-1.89 2.7l-.1.07a16.17 16.17 0 0 1-5.44 2.64 16.27 16.27 0 0 1 2.64-5.44zm-21.44 5.44a16.24 16.24 0 0 1-5.44-2.63l-.1-.08a5 5 0 0 1-1.89-2.7c0-.16 0-.6.69-1.33s1.16-.69 1.33-.68a5 5 0 0 1 2.7 1.89l.07.1a16.17 16.17 0 0 1 2.64 5.44zM10.41 37.3l-.07.1a4.92 4.92 0 0 1-2.7 1.88c-.17 0-.61 0-1.33-.68s-.69-1.16-.68-1.33a5 5 0 0 1 1.88-2.7l.1-.07a16.36 16.36 0 0 1 5.44-2.64 16.24 16.24 0 0 1-2.63 5.44zM25 25c-.84-.05-1.7-.08-2.57-.08s-1.72 0-2.56.08c.05-.84.08-1.7.08-2.57s0-1.72-.08-2.56a39.92 39.92 0 0 0 5.13 0c0 .84-.07 1.7-.08 2.57S25 24.18 25 25zm6.84 6.84a16.15 16.15 0 0 1 5.44 2.63l.1.08a4.94 4.94 0 0 1 1.89 2.7c0 .17 0 .61-.68 1.33s-1.17.69-1.33.68a4.94 4.94 0 0 1-2.7-1.88l-.08-.1a16.34 16.34 0 0 1-2.63-5.44z"></path></svg>
+            </a>
+            <nav role="navigation" class="rs-nav-main">
+                <div class="rs-nav-main-title">Menu</div>
+<ul class="rs-header-icons rs-header-icons-2020" data-header-icons="">
+</ul>            </nav>
+            <label for="mobileMenu" class="rs-burger-label" aria-hidden="true"><div class="rs-burger-icon"><div class="rs-burger-icon-content"></div></div></label>
+        </div>
+    </div>
+
+</div>
+
+            
+        </header>
+    </div>
+<!--googleon: index-->        <section class="rs-content-wrapper">
+            <main id="maincontent" role="main">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+  
+
+
+<section data-tms-id="TMS_CPV_CK_Product" id="c4abeb00-950a-4930-b9bc-c253920d1aad" name="CK section product" class="">
+
+		<div class="rs-fe3"></div>
+        <div class="row">
+	        <div class="small-12 columns medium-10">
+
+
+	        </div>
+        </div>
+        <div class="row">
+	        <div class="columns small-12">
+<div class="panel rs-border jsrs-resizerContainer clearfix">
+<h3 class="rs-panel-header rs-bg-purple rs-txt-c2 jsrs-resizerPart text-center">Test ongoing</h3>
+
+<div class="jsrs-resizerPart">
+<p>Dear,</p>
+
+<p>we will test&nbsp;a new version of the login component.</p>
+
+<p>Login could be degraded during this timeframe. Please let us know your issue on the mail :&nbsp; DL000106694@proximus.com</p>
+</div>
+</div>
+	        </div>
+        </div>
+	
+
+		<div class="rs-le2"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section id="login" data-tms-id="TMS_GLP_Birthday_Gift" class="jsrs-fullheight  ">
+		<div class="rs-fe3"></div>
+		<div class="row">
+				<div class="small-12 medium-7 small-centered columns">
+					<div class="rs-panel-big rs-bg-c2 clearfix">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<login-app translations="{
+  &quot;hasCaptcha&quot;: true,
+  &quot;title&quot;: &quot;Please log in or register an account&quot;,
+  &quot;titleLogin&quot;: &quot;Log in&quot;,
+  &quot;titleRegistration&quot;: &quot;Register&quot;,
+  &quot;registrationUrl&quot;: &quot;https://www-uat.proximus.be/MBPWeb/mbp/registration?lang=en&quot;,
+  &quot;itsMeImg&quot;: &quot;/dam/jcr:9754ea30-0b5a-412b-ba81-7fdb1faeb917/cdn/brand/logos/its-me-cta-login~2017-10-24-14-02-32~cache.png&quot;,
+  &quot;passwordRecoveryUrlOrMailAddress&quot;: &quot;https://www-uat.proximus.be/forgotpassword&quot;,
+  &quot;overlayer&quot;: false,
+  &quot;ru&quot;: &quot;&quot;,
+  &quot;eventMode&quot;: false,
+  &quot;stepUp&quot;: false,
+  &quot;itsMeRequired&quot;: true,
+  &quot;staySignInRequired&quot;: true,
+  &quot;labels&quot;: {
+    &quot;recoveryCodeFlowTitle&quot;: &quot;Enter your recovery code&quot;,
+    &quot;signinwithmobilenumberbuttonlabel&quot;: &quot;Sign in with mobile number&quot;,
+    &quot;resendSmsToolTip&quot;: &quot;Resend Sms&quot;,
+    &quot;recoveryCodeFlowToolTip&quot;: &quot;When you lost your device and no longer can generate the verification code, you can still log in with the recovery code received during installation of the authenticator app on your device. Please contact your Proximus contact person if you no longer have this code.&quot;,
+    &quot;tellMeMoreLink&quot;: &quot;https://www.itsme.be/en&quot;,
+    &quot;nextButtonLabel&quot;: &quot;Next&quot;,
+    &quot;defaultLoginRedirectUrl&quot;: &quot;https://www-uat.proximus.be/YPA/ypa&quot;,
+    &quot;activationcodeplaceholder&quot;: &quot;Text code&quot;,
+    &quot;mfaLoginEnterCodeTitle&quot;: &quot;Enter verification code&quot;,
+    &quot;recoveryCodeFlowSubmitButtonTitle&quot;: &quot;Submit&quot;,
+    &quot;loginTitle&quot;: &quot;Login&quot;,
+    &quot;mfaLoginUseRecoveryFlowTitle&quot;: &quot;Use Recovery Code&quot;,
+    &quot;signinButtonLabel&quot;: &quot;Sign In&quot;,
+    &quot;itsMeNotLinkTitle&quot;: &quot;We couldn&#39;t link your itsme to a MyProximus account. Please log in with your MyProximus login one last time or register an account.&quot;,
+    &quot;otpDisabledMsg&quot;: &quot;Login via SMS-code is no longer available due to security reasons, please log in with your username and Password&quot;,
+    &quot;usernameplaceholder&quot;: &quot;jsmith@example.be&quot;,
+    &quot;recoveryLabel&quot;: &quot;Forgot username or password?&quot;,
+    &quot;orLabel&quot;: &quot;OR&quot;,
+    &quot;tellMeMoreLabel&quot;: &quot;Tell me more about &quot;,
+    &quot;dontHaveAccountTitle&quot;: &quot; &quot;,
+    &quot;mfaLoginRecoveryToolTip&quot;: &quot;If you have lost your device you can still log in via the recovery codes you received while linking your device to your login.  If you don’t have these codes anymore you can contact your contact person for a reset.&quot;,
+    &quot;recoveryLink&quot;: &quot;https://www-uat.proximus.be/forgotpassword&quot;,
+    &quot;editToolTip&quot;: &quot;Edit&quot;,
+    &quot;registrationTitle&quot;: &quot;Register&quot;,
+    &quot;signinwithmypxscredentials&quot;: &quot;Or sign in with MyProximus credentials&quot;,
+    &quot;googleCaptchaPublicKey&quot;: &quot;6LefSSoUAAAAAKa5OKjVLxp1-OGFH88nqKrtz_UM&quot;,
+    &quot;keepMeLoggedInLabel&quot;: &quot;Keep me logged in&quot;,
+    &quot;keepMeLoggedInToolTip&quot;: &quot;You want to visit MyProximus without password in the future? Check this option if you are on your own device. Not on your own device? Don&#39;t forget to log off at the end of your visit.&quot;,
+    &quot;mfaLoginTitle&quot;: &quot;Open your authenticator-app&quot;,
+    &quot;warningLabel&quot;: &quot;Attention&quot;,
+    &quot;passwordPlaceHolder&quot;: &quot;Password&quot;,
+    &quot;mfaLoginSubmitTitle&quot;: &quot;Submit&quot;
+  },
+  &quot;errorMessagesInJson&quot;: [
+    {
+      &quot;errorCode&quot;: &quot;username.required&quot;,
+      &quot;errorMessage&quot;: &quot;Please fill in your username&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;password.required&quot;,
+      &quot;errorMessage&quot;: &quot;Please fill in a password.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;Authentication Failed&quot;,
+      &quot;errorMessage&quot;: &quot;Wrong username and/or password.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;Your account has been locked.&quot;,
+      &quot;errorMessage&quot;: &quot;Your account is locked for 15min due to 3 wrong attempts.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;Authentication Failed Warning: You will be locked out after 1 more failure(s).&quot;,
+      &quot;errorMessage&quot;: &quot;Wrong username and/or password.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;domain.not.exists&quot;,
+      &quot;errorMessage&quot;: &quot;We couldn&#39;t log you in. Please try again later.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;Technical_Error&quot;,
+      &quot;errorMessage&quot;: &quot;We couldn&#39;t log you in. Please try again later.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;tokenid.not.exists&quot;,
+      &quot;errorMessage&quot;: &quot;We couldn&#39;t log you in. Please try again later.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;ERR_NOTFOUND-MSISDN not found as OTP login&quot;,
+      &quot;errorMessage&quot;: &quot;&lt;b&gt;You cannot sign in yet with this number&lt;/b&gt;&lt;p&gt;Log in with your MyProximus username and password to activate this number under &lt;a target=\&quot;_parent\&quot; href=\&quot;https://www-uat.proximus.be/myproximus/en/Personal/services/My-Account__/overview\&quot;&gt;My Account&lt;/a&gt;. Don&#39;t have one yet? &lt;a target=\&quot;_parent\&quot; href=\&quot;https://www-uat.proximus.be/MBPWeb/mbp/registration?lang=en\&quot;&gt;Register&lt;/a&gt;&lt;/p&gt;&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;ERR_TOO_MANY_USERS_FOUND-We found several users using this MSISDN as OTP login (only 1 user is allowed)&quot;,
+      &quot;errorMessage&quot;: &quot;This mobile number can&#39;t be used to sign in. Please sign in with your username and password.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;activationcode.invalid&quot;,
+      &quot;errorMessage&quot;: &quot;The text code you entered is incorrect.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;msisdn.error.format&quot;,
+      &quot;errorMessage&quot;: &quot;Please enter a mobile number in the 0471234567 format.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;activationcode.required&quot;,
+      &quot;errorMessage&quot;: &quot;Please enter your text code.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;OTP_CODE_RESEND_SUCCESS-DELETE This&quot;,
+      &quot;errorMessage&quot;: &quot;OTP Code sent to your mobile, Please enter into above input and Continue[EN]&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;Your account has been locked -Delete this&quot;,
+      &quot;errorMessage&quot;: &quot;Your Account has been locked [EN]&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;User not Active&quot;,
+      &quot;errorMessage&quot;: &quot;Your account is not valid.&quot;
+    },
+    {
+      &quot;errorCode&quot;: &quot;Login failure&quot;,
+      &quot;errorMessage&quot;: &quot;Wrong username and/or password.&quot;
+    }
+  ]
+}" ng-version="8.0.3"><!----><credentials _nghost-fly-c0=""><div _ngcontent-fly-c0="" class="show-for-medium-up"><!----><p _ngcontent-fly-c0="" class="rs-tit3">Please log in or register an account</p><!----></div><div _ngcontent-fly-c0="" class="rs-flex-row rs-flex-middle"><div _ngcontent-fly-c0="" class="rs-flex-column rs-flex-shrink"><h4 _ngcontent-fly-c0="">Log in</h4></div><div _ngcontent-fly-c0="" class="rs-flex-column"><p _ngcontent-fly-c0="" class="rs-txt-s3 text-right"> <a _ngcontent-fly-c0="" href="https://www-uat.proximus.be/MBPWeb/mbp/registration?lang=en">Register</a></p></div></div><form _ngcontent-fly-c0="" id="login.landing" novalidate="" class="ng-dirty ng-valid ng-touched"><label _ngcontent-fly-c0="" for="username"><input _ngcontent-fly-c0="" formcontrolname="username" id="username" name="username" required="" title="" type="text" placeholder="jsmith@example.be" class="ng-untouched ng-pristine ng-valid"></label><!----><label _ngcontent-fly-c0="" for="password" class="rs-label-input-icon"><input _ngcontent-fly-c0="" autocomplete="off" class="rs-input-icon ng-dirty ng-valid ng-touched" formcontrolname="password" id="password" name="password" type="password" placeholder="Password" autocompleted=""><a _ngcontent-fly-c0="" class="rs-see-pwd-link has-tip" data-tooltip="" data-selector="tooltip-ksio5xhh0" aria-describedby="tooltip-ksio5xhh0" title=""><i _ngcontent-fly-c0="" class="icon-Seealso icon-large"></i></a></label><!----><!----><!----><!----><div _ngcontent-fly-c0=""><div _ngcontent-fly-c0="" class="rs-checkbox-big"><input _ngcontent-fly-c0="" formcontrolname="ssi" id="checkbox100" name="ssi" type="checkbox" class="ng-untouched ng-pristine ng-valid"><label _ngcontent-fly-c0="" for="checkbox100">Keep me logged in</label><span _ngcontent-fly-c0="" class="has-tip" data-tooltip="" data-selector="tooltip-ksio5xhh1" aria-describedby="tooltip-ksio5xhh1" title=""><i _ngcontent-fly-c0="" class="icon-Help rs-valign-top"></i><span aria-label="You want to visit MyProximus without password in the future? Check this option if you are on your own device. Not on your own device? Don&#39;t forget to log off at the end of your visit."></span></span></div></div><div _ngcontent-fly-c0="" class="rs-flex-row rs-flex-middle-medium rs-flex-dir-col-small-only"><div _ngcontent-fly-c0="" class="rs-flex-column rs-flex-shrink rs-order-m2"><!----><re-captcha _ngcontent-fly-c0="" size="invisible" id="ngrecaptcha-0"><div class="grecaptcha-badge" data-style="bottomright" style="width: 256px; height: 60px; display: block; transition: right 0.3s ease 0s; position: fixed; bottom: 14px; right: -186px; box-shadow: gray 0px 0px 5px; border-radius: 2px; overflow: hidden;"><div class="grecaptcha-logo"><iframe title="reCAPTCHA" src="./proximus_files/anchor.html" width="256" height="60" role="presentation" name="a-efyvs43l4mrf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><div class="grecaptcha-error"></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;" src="./proximus_files/saved_resource(1).html"></iframe></re-captcha><button _ngcontent-fly-c0="" analytics-element-clicked="signin" class="rs-btn rs-btn-large rs-btn-wide-so" data_action="signin.email" data_location="login.landing" id="signin" type="submit">Sign In</button><!----></div><div _ngcontent-fly-c0="" class="rs-flex-column rs-order-m1"><p _ngcontent-fly-c0="" class="rs-txt-s3 text-center medium-text-right"><a _ngcontent-fly-c0="" href="https://www-uat.proximus.be/forgotpassword">Forgot username or password?</a></p></div></div><!----><div _ngcontent-fly-c0=""><hr _ngcontent-fly-c0="" class="rs-hr-light "><div _ngcontent-fly-c0="" class="itsme-section rs-flex-row rs-flex-middle rs-flex-dir-col-small-only"><div _ngcontent-fly-c0="" class="rs-flex-column rs-flex-shrink rs-order-m2"><p _ngcontent-fly-c0="" class="rs-txt-s3">Tell me more about  <a _ngcontent-fly-c0="" target="_blank" href="https://www.itsme.be/en">itsme</a>?</p></div><div _ngcontent-fly-c0="" class="rs-flex-column rs-order-m1"><a _ngcontent-fly-c0="" analytics-element-clicked="itsme" data_action="signin.itsmelanding" data_location="login.landing"><img _ngcontent-fly-c0="" alt="Log in with itsme" src="./proximus_files/its-me-cta-login_2017-10-24-14-02-32_cache.png"></a></div></div><div _ngcontent-fly-c0="" class="rs-flex-row"><div _ngcontent-fly-c0="" class="rs-flex-column rs-flex-middle"><!----></div></div></div></form></credentials><!----><!----></login-app>
+<div class="rs-me"></div>
+<script src="./proximus_files/scripts_2021-07-27-09-49-15-593_cache.js.download"></script>
+<script src="./proximus_files/main_2021-07-27-09-49-15-638_cache.js.download"></script>
+	
+
+					</div>
+				</div>
+		</div>
+		<div class="rs-le2"></div>
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="rs-contactwizard jsrs-contact-wizard" data-tms-id="TMS_CONTACT_WIZARD" data-elastic="index-off">
+    <div class="rs-shadow-overlay">
+        <div class="rs-contactwizard__modal rs-bgr-s8tl" role="dialog" data-reveal="" aria-labelledby="modal_label">
+            <a href="https://www-uat.proximus.be/login/en/?#" class="jsrs-contactHide rs-contact-hide rs-inline-block right rs-margin-left2 rs-pos-rel" style="z-index:10;">
+                <i class="icon-li icon-Not-Available icon-lh rs-txt-c2 rs-txt-s5"></i>
+            </a>
+
+            <h3 class="rs-txt-s8 rs-padding-bottom1">
+            Do you have a question?
+            </h3>
+
+            <h4 class="rs-font-pxL rs-padding-bottom2">
+            Ask one of our advisors. Make your choice:
+            </h4>
+
+            <ul class="clearfix">
+<!-- mandatory fields for CallMeBackWidget -->
+
+
+
+
+
+            </ul>
+        
+            <div aria-labelledby="modal_label" class="reveal-modal rs-reveal-modal-small" data-reveal="" id="modalWizard" role="dialog">
+                <div class="rs-modal-close">
+                    <button class="rs-link-action rs-link-action-close close-reveal-modal"><span class="rs-action-link-icon" title="Close the overlayer"><span class="show-for-sr">&gt;Close</span></span></button>
+                </div>
+                <div class="rs-modal-heading">
+                    <h2 class="rs-modal-heading-title rs-has-subtit" id="modal_label">Do you have a question?</h2>
+                    <h3 class="rs-modal-heading-subtit">Ask one of our advisors. Make your choice:</h3>
+                </div>
+                <div class="rs-modal-content">
+                   
+                    <ul class="icons-ul big-icons-ul rs-padding-top1">
+<!-- mandatory fields for CallMeBackWidget -->
+
+
+
+
+
+                    </ul>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<style>
+
+button.rs-contact-show.rs-radius{
+    background-color: #5C2D91 !important;
+    background-image: none !important;
+}
+button.rs-contact-show.rs-radius:hover{
+    background-color: #7d57a7 !important
+}
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <footer id="footer" style="">
+
+
+
+
+
+<!--googleoff: index-->
+<footer id="footer" class="rs-footer--1808" data-elastic="index-off">
+	<section class="rs-footer-bg">
+	</section>
+</footer>
+<!--googleon: index-->
+
+
+                </footer>
+            </main>
+        </section>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+	var PxConsentManager = window.PxConsentManager || {};
+	PxConsentManager.isDebug = false;
+</script>
+<script async="async" src="./proximus_files/notice" crossorigin="" id="truste_0.19890700561499708"></script>
+
+<script type="text/javascript">
+</script>
+
+	<script src="./proximus_files/login-all-pack_2021-08-17-15-33-02-307_cache.js.download" type="text/javascript"></script><span data-selector="tooltip-ksio5xhh0" id="tooltip-ksio5xhh0" class="tooltip" role="tooltip" aria-hidden="true" data-is-active="false">Show password</span><span data-selector="tooltip-ksio5xhh1" id="tooltip-ksio5xhh1" class="tooltip" role="tooltip" aria-hidden="true" data-is-active="false">You want to visit MyProximus without password in the future? Check this option if you are on your own device. Not on your own device? Don't forget to log off at the end of your visit.</span><script async="async" type="text/javascript" crossorigin="" src="./proximus_files/v1.7-8690"></script>
+
+<script type="text/javascript">var iportalData = iportalData || {};
+iportalData.bvUrl = "//display-stg.ugc.bazaarvoice.com/static/proximus/en_BE/bvapi.js";
+iportalData.author = false;     
+
+        (function () {
+            'use strict';
+
+            if (window.angular && !!angular.module) {
+                angular
+                    .module('beProximus.cpv')
+                    .constant('stockServiceConfig', {
+                        posLocatorTreshold: 3,
+                        timeout: 100000,
+                        apiUrl: '/rest/products/datasets/Stocks',
+                    });
+            }
+        }) ();
+        
+
+</script>
+
+            
+		<script type="text/javascript">
+    var elements = document.querySelectorAll("#langList li a");
+    for (var i = 0; i < elements.length; i++) {
+    elements[i].onclick=$fn.languageManagement.ngLangSwitch;
+    }
+        </script>
+
+		<script type="text/javascript">
+	(window.PxConsentManagerScript = window.PxConsentManagerScript || []).push(["PXPERSO", function () {
+	window.hj = window.hj || function () {
+	(hj.q = hj.q || []).push(arguments)};
+	hj('trigger', 'trigger-login-default-en');
+	}]);
+        </script>
+
+		<script type="text/javascript">
+  $(document).foundation('interchange', {
+	named_queries : {
+		STo120 : 'only screen and (min-width: 641px)and (max-width: 1200px)',
+		LFrom1200 : 'only screen and (min-width: 1201px)'
+	}
+});
+        </script>
+
+
+
+<script>_satellite["_runScript13"](function(event, target, Promise) {
+!function(){window._dx_=window._dx_||{},window._dx_.util=window._dx_.util||{};var e=window._dx_.WkMp=window.WeakMap||function o(){var n="__"+[n++,Math.random()],t=function(e){return hOP.call(e,n)};return{has:t,get:function(e){return e[n]},"delete":function(e){return t(e)&&delete e[n]},set:function(e,t){return Object.defineProperty(e,n,{configurable:!0,value:t}),this}}};window._dx_.util.clean=function t(){function n(e){var t,n,o="\xc0\xc1\xc2\xc3\xc4\xc5\xe0\xe1\xe2\xe3\xe4\xe5\xd2\xd3\xd4\xd5\xd5\xd6\xd8\xf2\xf3\xf4\xf5\xf6\xf8\xc8\xc9\xca\xcb\xe8\xe9\xea\xeb\xf0\xc7\xe7\xd0\xcc\xcd\xce\xcf\xec\xed\xee\xef\xd9\xda\xdb\xdc\xf9\xfa\xfb\xfc\xd1\xf1\u0160\u0161\u0178\xff\xfd\u017d\u017e",r="AAAAAAaaaaaaOOOOOOOooooooEEEEeeeeeCcDIIIIiiiiUUUUuuuuNnSsYyyZz",i=(e=e.split("")).length;for(t=0;t<i;t++)-1!=(n=o.indexOf(e[t]))&&(e[t]=r[n]);return e.join("")}function e(e){if("string"!=typeof e)return e;var t=e.replace(/[,*+~.()'"?!:@]/gm,"").replace(/^\s+|\s+$/g,"").replace(/[-\s]+/g,"-").replace(/[\u1000-\uFFFF]+/g,"").replace(/(^-)|(-$)/g,"");return(t=t.normalize&&"function"==typeof t.normalize?t.normalize("NFD").replace(/[\u0300-\u036f]/g,""):n(t)).toLowerCase()}return e}(),window._dx_.util.inViewport=function(l){function e(e,t,n){var o={container:l.document.body,offset:0,debounce:15,failsafe:150};void 0!==t&&"function"!=typeof t||(n=t,t={});var r=o.container=t.container||o.container,i=o.offset=t.offset||o.offset,a=o.debounce=t.debounce||o.debounce,c=o.failsafe=t.failsafe||o.failsafe;!0===c?c=150:!1===c&&(c=0),0<c&&c<a&&(c=a+50);for(var u=0;u<p.length;u++)if(p[u].container===r&&p[u]._debounce===a&&p[u]._failsafe===c)return p[u].isInViewport(e,i,n);return p[p.push(d(r,a,c))-1].isInViewport(e,i,n)}function s(e,t,n){e.attachEvent?e.attachEvent("on"+t,n):e.addEventListener(t,n,!1)}function f(r,i,a){var c;return function(){function e(){c=null,a||r.apply(t,n)}var t=this,n=arguments,o=a&&!c;clearTimeout(c),c=setTimeout(e,i),o&&r.apply(t,n)}}function d(i,e,t){function n(e,t,n){if(!n)return a(e,t);var o=r(e,t,n);return o.watch(),o}function r(e,t,n){function o(){c.add(e,t,n)}function r(){c.remove(e)}return{watch:o,dispose:r}}function o(e,t,n){a(e,t)&&(c.remove(e),n(e))}function a(e,t){if(!e)return!1;if(!m(l.document.documentElement,e)||!m(l.document.documentElement,i))return!1;if(!e.offsetWidth||!e.offsetHeight)return!1;var n=e.getBoundingClientRect(),o={};if(i===l.document.body)o={top:-t,left:-t,right:l.document.documentElement.clientWidth+t,bottom:l.document.documentElement.clientHeight+t};else{var r=i.getBoundingClientRect();o={top:r.top-t,left:r.left-t,right:r.right+t,bottom:r.bottom+t}}return n.right>=o.left&&n.left<=o.right&&n.bottom>=o.top&&n.top<=o.bottom}var c=h(),u=i===l.document.body?l:i,d=f(c.checkAll(o),e);return s(u,"scroll",d),u===l&&s(l,"resize",d),w&&v(c,i,d),0<t&&setInterval(d,t),{container:i,isInViewport:n,_debounce:e,_failsafe:t}}function h(){function e(e,t,n){o(e)||i.push([e,t,n])}function t(e){var t=n(e);-1!==t&&i.splice(t,1)}function n(e){for(var t=i.length-1;0<=t;t--)if(i[t][0]===e)return t;return-1}function o(e){return-1!==n(e)}function r(t){return function(){for(var e=i.length-1;0<=e;e--)t.apply(this,i[e])}}var i=[];return{add:e,remove:t,isWatched:o,checkAll:r}}function v(n,e,t){function o(e){!0===e.some(r)&&setTimeout(t,0)}function r(e){var t=c.call([],Array.prototype.slice.call(e.addedNodes),e.target);return 0<a.call(t,n.isWatched).length}var i=new MutationObserver(o),a=Array.prototype.filter,c=Array.prototype.concat;i.observe(e,{childList:!0,subtree:!0,attributes:!0})}var p=[],w="function"==typeof l.MutationObserver,m=function(){return!l.document||(l.document.documentElement.compareDocumentPosition?function(e,t){return!!(16&e.compareDocumentPosition(t))}:l.document.documentElement.contains?function(e,t){return e!==t&&!!e.contains&&e.contains(t)}:function(e,t){for(;t=t.parentNode;)if(t===e)return!0;return!1})};return e}(window),window._dx_.util.QuerySelectorObserver=function(){"use strict";function e(e){this._=[],this.$=e,this.I="selector-observer-"+t++,this.P=n?"outline-color":"--"+this.I}function i(e,t,n){this.addedNodes=t,this.removedNodes=n,this.target=e?t[0]:n[0]}function l(e){var t=d.get(e);if(t){d["delete"](e);for(var n,o=0,r=t.length;o<r;o++)(n=t[o]).connected&&n.$([new i(!1,[],[e])])}}function a(e){var t=document,n=t.createElement("style");return n.textContent=e,t.head.appendChild(n)}var t=0,n=typeof Reflect==typeof n,c=["animationstart","webkitAnimationStart","MSAnimationStart"],u=["","-webkit-","-moz-","-ms-","-o-"],o=e.prototype,d=new window._dx_.WkMp,s=[],r=null;return i.prototype.type="childList",o.connected=!0,o.handleEvent=function(e){var t,n,o;e.animationName===this.I&&(e.preventDefault(),e.stopPropagation(),this.$([new i(!0,[(t=this,n=e.target,o=d.get(n),o?o.indexOf(t)<0&&o.push(t):d.set(n,[t]),n)],[])]))},o.observe=function(e){s.indexOf(e)<0&&s.push(e),r||(r=new MutationObserver(function(e){for(var t=0,n=e.length;t<n;t++)for(var o,r,i=e[t].removedNodes,a=0,c=i.length;a<c;a++)if(1===(o=i[a]).nodeType){l(o);for(var u=0,d=(r=o.querySelectorAll(s)).length;u<d;u++)l(r[u])}})).observe(document,{childList:!0,subtree:!0});var t=this._,n=this.I,o=this.P;t.length||function(e,t,n){for(var o=0,r=c.length;o<r;o++)document.addEventListener(c[o],e,!0);var i=[];for(o=0,r=u.length;o<r;o++)i[o]="@"+u[o]+"keyframes "+t+["{from{",":#fff;}to{",":#000;}}"].join(n);e._.push(a(i.join("\n")))}(this,n,o),t.push(a(function(e,t){for(var n=[],o=0,r=u.length;o<r;o++)n[o]=["","animation-duration:0.001s;","animation-name:"+t].join(u[o]);return e+"{"+n.join(";")+";}"}(e,n)))},o.disconnect=function(){!function(e){e.connected=!1;for(var t=0,n=c.length;t<n;t++)document.removeEventListener(c[t],e,!0);var o=e._.splice(0);for(t=0,n=o.length;t<n;t++){var r=o[t],i=r.parentNode;i&&i.removeChild(r)}}(this)},e}(),window._dx_.util.matches=function r(e,t){var n=Element.prototype;return(n.matches||n.webkitMatchesSelector||n.mozMatchesSelector||n.msMatchesSelector||function(e){return-1!==[].indexOf.call(document.querySelectorAll(e),this)}).call(e,t)},window._dx_.util.closest=function n(e,t){if(e.closest)return e.closest(t);for(;e;){if(window._dx_.util.matches(e,t))return e;e=e.parentElement}return null};var h=new e;window._dx_.viewed={};var v=function v(e){e=e||[];for(var t=0;t<e.length;t++){var n=e[t];if(n.addedNodes&&n.addedNodes.length)for(var o=0;o<n.addedNodes.length;o++){var r=n.addedNodes[o];if(!h.has(r)){var i=__.getDomData(r),a=i&&i.event?i.event.split("-").shift():"interaction";_satellite.logger.log("ImpressionTracker",a,i);var c={},u=!!i&&!!i[a]&&i[a].name,d=!!i&&!!i[a]&&i[a].zone;u&&(u=u.toLowerCase(),"banner"===a&&(c.id=u)),_satellite.logger.log("ImpressionTracker",a,u,d);var l=function(e){if(!!window["at-body-style"])return this.watcher&&this.watcher.watch(),!1;var t=__.getDomData(e),n={};for(var o in t)"event"!=o&&(n[o]=t[o]);var r=t&&t.products&&0<t.products.length?t.products:t&&t.product&&0<t.product.length?t.product:undefined,i=this.id;if(i&&window._dx_.viewed[i])return window._dx_.viewed[i]+=1,!0;_satellite.logger.log("ImpressionTracker callback data",a,t),n.event=a+"-impression",n[a]=t[a]||{},n[a].name=window._dx_.util.clean(u),n[a].zone=d,n.products=r,_satellite.logger.log("ImpressionTracker callback output",a,t,n),i&&(window._dx_.viewed[i]=1),pxdatalayer.push(n),this.watcher};if(c.cb=l,!!window["at-body-style"]&&window._dx_.util.inViewport(r)){c.cb.bind(c)(r)}else{var s=r.offsetHeight;s=(s=s>window.innerHeight?0:s)?.2*-s:0;var f=window._dx_.util.inViewport(r,{failsafe:!1,offset:s},c.cb.bind(c));c.watcher=f}h.set(r,c)}}}};window._dx_.qso=new window._dx_.util.QuerySelectorObserver(v),window._dx_.qso.observe('[data-tms-event*="-impression"]'),window._dx_.__mp=h}();
+});</script><script>_satellite["_runScript14"](function(event, target, Promise) {
+!function(){var a=window.utag_data;if(a){var t=__.parseUtagData(a);if(!t)return undefined;t.event="tealiumdata-push",_satellite.logger.log("Found utag_data and converted",t),pxdatalayer.push(t)}}();
+});</script><script>_satellite["_runScript15"](function(event, target, Promise) {
+window.addEventListener("message",function a(e){if(!e||!e.origin||""===e.origin)return!0;if(!e.data||"string"!=typeof e.data||""===e.data)return!0;var t,n=e.data.slice("tms$".length);if(0!==e.data.indexOf("tms$")||!/^[\[|\{](\s|.*|\w)*[\]|\}]$/.test(n))return!0;try{t=JSON.parse(n)}catch(e){return!0}if((t=t&&"Array"!==Object.prototype.toString.call(t).slice(8,-1)?[t]:t)&&0<t.length)for(var r=0;r<t.length;r++){var i=__.parseUtagData(t[r]);i.event&&"element_load"==i.event&&(i.event="page-impression"),window.pxdatalayer&&window.pxdatalayer.push(i)}return!0}),window.TMS=window.TMS||{},window.TMS.send=function b(e){if(!e)return!0;if((e=__.parseUtagData(e)).event)switch(e.event){case"impression":return!0;case"element_load":e.event="page-impression";break;default:e.event="app-interaction"}window.pxdatalayer&&window.pxdatalayer.push(e)};
+});</script><script>_satellite["_runScript16"](function(event, target, Promise) {
+_satellite.logger.log("Trigger page impression"),pxdatalayer.push({event:"page-impression",origin:"automatic"});
+});</script><script>_satellite["_runScript17"](function(event, target, Promise) {
+setTimeout(function(){_satellite.track("DomReady2S")},2e3);
+});</script><script>_satellite["_runScript18"](function(event, target, Promise) {
+!function(o,i,e){"use strict";function a(){for(var e=0;e<u.length;e++){if(t(u[e]))n(r(u[e]))}}function t(e){var a=e.src||"";return-1<a.indexOf("youtube.com/embed/")||-1<a.indexOf("youtube.com/v/")}function r(e){var a=o.createElement("a");a.href=e.src,a.hostname="www.youtube.com",a.protocol=o.location.protocol;var t="/"===a.pathname.charAt(0)?a.pathname:"/"+a.pathname,r=i.location.protocol+"%2F%2F"+i.location.hostname+(i.location.port?":"+i.location.port:"");if(-1===a.search.indexOf("enablejsapi")&&(a.search=(0<a.search.length?a.search+"&":"")+"enablejsapi=1"),-1===a.search.indexOf("origin")&&-1===i.location.hostname.indexOf("localhost")&&(a.search=a.search+"&origin="+r),"application/x-shockwave-flash"===e.type){var n=o.createElement("iframe");n.height=e.height,n.width=e.width,t=t.replace("/v/","/embed/"),e.parentNode.parentNode.replaceChild(n,e.parentNode),e=n}return a.pathname=t,e.src!==a.href+a.hash&&(e.src=a.href+a.hash),e}function n(a){a.pauseFlag=!1,new YT.Player(a,{events:{onStateChange:function(e){c(e,a)}}})}function h(e){var a={};if(m.events.end&&(a.end=99*e/100),m.percentageTracking){var t,r=[];if(m.percentageTracking.each&&(r=r.concat(m.percentageTracking.each)),m.percentageTracking.every){var n=parseInt(m.percentageTracking.every,10),o=100/n;for(t=1;t<o;t++)r.push(t*n)}for(t=0;t<r.length;t++){var i=r[t],c=e*i/100;a[i+"%"]=Math.floor(c)}}return a}function d(e,a,t){e.getDuration();var r,n=e.getCurrentTime(),o=(e.getPlaybackRate(),e.getVideoData()),i=!(!o||!o.title||""===o.title)&&o.title;for(r in e[t]=e[t]||{},a)a[r]<=n&&!e[t][r]&&(e[t][r]=!0,f(t,r,n,i))}function c(e,a){var t=e.data,r=e.target,n=r.getVideoUrl().match(/[?&]v=([^&#]*)/)[1],o=r.getPlayerState(),i=r.getVideoData(),c=!(!i||!i.title||""===i.title)&&i.title,l=r.getDuration(),p=r.getCurrentTime(),u=h(l),s={1:"play",2:"pause"}[t];if(a.playTracker=a.playTracker||{},1!==o||a.timer?(clearInterval(a.timer),a.timer=!1):(clearInterval(a.timer),a.timer=setInterval(function(){d(r,u,a.videoId)},1e3)),a.videoId!==n&&T[s]&&(T[s].run=!1),1===t&&(a.playTracker[n]=!0,a.videoId=n,a.pauseFlag=!1),!a.playTracker[a.videoId])return!1;if(2===t){if(a.pauseFlag)return!1;a.pauseFlag=!0}if(y[s]){if(T[s]&&!0===T[s].run)return!0;f(a.videoId,s,p,c),T[s]&&!1===T[s].run&&(T[s].run=!0)}}function f(e,a,t,r){var n={event:"video-"+a,video:{url:(r=!(!r||""===r)&&r.replace(/\W|\s/g,".").replace(/\W{2,}/g,"."))&&""!==r?r:"Youtube-"+e,duration:t}};pxdatalayer.push(n)}var l;i.onYouTubeIframeAPIReady=(l=i.onYouTubeIframeAPIReady,function(){l&&l.apply(this,arguments),navigator.userAgent.match(/MSIE [67]\./gi)||a()});for(var p=Array.prototype.slice.call(o.getElementsByTagName("iframe")).concat(Array.prototype.slice.call(o.getElementsByTagName("embed"))),u=[],s=0;s<p.length;s++)if(t(p[s])){var g=r(p[s]);u.push(g)}p=undefined;var v,m=e||{},y=(m.forceSyntax,{play:!0,pause:!0,end:!0}),T={};for(v in m.events)m.events.hasOwnProperty(v)&&(y[v]=m.events[v].enabled,m.events[v].once&&(T[v]=m.events[v],T[v].run=!1));if(0!==u.length){var b=o.createElement("script");b.src="//www.youtube.com/iframe_api";var I=o.getElementsByTagName("script")[0];I.parentNode.insertBefore(b,I)}}(document,window,{events:{play:{enabled:!0,once:!0},pause:{enabled:!1,once:!0},end:{enabled:!0,once:!1}},percentageTracking:{each:[25,50,75]}});
+});</script><script>_satellite["_runScript19"](function(event, target, Promise) {
+function getTLD(){var e=document.location.host,t=e.split("."),a=/\.co\.|\.com\.|\.org\.|\.edu\.|\.net\.|\.asn\./.test(e)?3:2;return"."+t.splice(t.length-a,a).join(".")}var currentpage=_satellite.getVar("Page Categories"),previouspage=_satellite.getVar("Previous Page"),domain=getTLD();(currentpage&&previouspage&&currentpage!=previouspage||currentpage&&!previouspage)&&(_satellite.logger.log("Update previous page to",currentpage),_satellite.cookie.set("gpv_v18",currentpage,{domain:domain}));
+});</script><script>_satellite["_runScript20"](function(event, target, Promise) {
+window._uxa=window._uxa||[],window._uxa.push(["trackConsentWithdrawn"]),window._uxa.push(["setCustomVariable",1,"segment",_satellite.getVar("Page Segment",event)]),window._uxa.push(["setCustomVariable",2,"page_language",_satellite.getVar("Page Language",event)]),window._uxa.push(["setCustomVariable",3,"page_id",_satellite.getVar("Page ID",event)]),window._uxa.push(["setCustomVariable",4,"customer_info",_satellite.getVar("UserInfo Cookie",event)]),window._uxa.push(["setCustomVariable",5,"page_category_l1",_satellite.getVar("Page Category L1",event)]),window._uxa.push(["setCustomVariable",6,"page_category_l2",_satellite.getVar("Page Category L2",event)]),window._uxa.push(["setCustomVariable",7,"page_category_l3",_satellite.getVar("Page Category L3",event)]),window._uxa.push(["setCustomVariable",8,"page_category_l4",_satellite.getVar("Page Category L4",event)]),window._uxa.push(["setCustomVariable",9,"page_variant",_satellite.getVar("Page Variant",event)]),window._uxa.push(["setCustomVariable",10,"authentication",_satellite.getVar("Authentication",event)]),_satellite.logger.log("CS Data set"),window._uxa.push(["trackPageview",_satellite.getVar("Page URL",event)]),_satellite.logger.log("CS Pageview Send");var key=_satellite.getVar("_cs_mk");key&&(_satellite.setVar("_cs_mk",undefined),window._uxa.push(["trackDynamicVariable",{key:"csMatchingKey",value:key}]),function(){function e(){a||(a=!0,window.CS_CONF&&(CS_CONF.integrations=CS_CONF.integrations||[],CS_CONF.integrations.push("Adobe Analytics")))}var a=!1;window._uxa=window._uxa||[],window._uxa.push(["afterPageView",e])}());
+});</script><script>_satellite["_runScript21"](function(event, target, Promise) {
+window._CI||function(n){function c(e){return e&&window.XDomainRequest&&!/MSIE 1/.test(navigator.userAgent)?new XDomainRequest:window.XMLHttpRequest?new XMLHttpRequest:void 0}function _(e,t,n){e[t]=e[t]||n}n._CI={};var w=["responseType","withCredentials","timeout","onprogress"];n._CI.ajax=function(e,n){function t(e,t){return function(){i||(n(s.status===undefined?e:s.status,0===s.status?"Error":s.response||s.responseText||t,s),i=!0)}}var a=e.headers||{},r=e.body,o=e.method||(r?"POST":"GET"),i=!1,s=c(e.cors);s.open(o,e.url,!0);var u=s.onload=t(200);s.onreadystatechange=function(){4===s.readyState&&u()},s.onerror=t(null,"Error"),s.ontimeout=t(null,"Timeout"),s.onabort=t(null,"Abort"),r&&(_(a,"X-Requested-With","XMLHttpRequest"),window.FormData&&r instanceof window.FormData||_(a,"Content-Type","application/x-www-form-urlencoded"));for(var l=0,g=w.length;l<g;l++)e[d=w[l]]!==undefined&&(s[d]=e[d]);for(var d in a)s.setRequestHeader(d,a[d]);return s.send(r),s},n._CI._Q_=[],n._CI.cfg={url:"https://www.proximus.be/rest/customer-interactions/customer-interaction",method:"POST",headers:{"Content-Type":"application/json","x-caller-chain":"CINT:tealium"}},n._CI.cb=function a(e,t){n._CI._Q_.push({response:t,code:e})},n._CI.setEnv=function(e){var t=!1;e&&"development"==e&&(t="-itt"),e&&"staging"==e&&(t="-uat"),t&&(n._CI.cfg.url=n._CI.cfg.url.replace(/\/www\./,"/www"+t+"."))},n._CI.send=function r(e){var t=JSON.stringify(e);n._CI.ajax({url:n._CI.cfg.url,method:n._CI.cfg.method,body:t,headers:n._CI.cfg.headers},n._CI.cb)}}(window),function(e){function t(e){for(var t in e=e||{})if(!e[t])return _satellite.logger.warn("CI data missing (abort): "+t),!1;return!0}var n=_satellite.getVar("Cust ID",e);if(n){var a=_satellite.buildInfo.environment||"production";window._CI.setEnv(a);var r={pageUrl:_satellite.getVar("Page URL",e),site:_satellite.getVar("Page Site",e),sessionId:_satellite.getVar("Visit UUID",e),customerId:n,pageCategories:_satellite.getVar("Page Categories",e)+"|"+_satellite.getVar("Page Name",e),segment:_satellite.getVar("Page Segment",e),pageId:_satellite.getVar("Page ID",e),pageLanguage:_satellite.getVar("Page Language",e)};t(r)&&window._CI.send(r)}}(event);
+});</script><div style="visibility: hidden; position: absolute; width: 100%; top: -10000px; left: 0px; right: 0px; transition: visibility 0s linear 0.3s, opacity 0.3s linear 0s; opacity: 0;"><div style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; z-index: 2000000000; background-color: rgb(255, 255, 255); opacity: 0.5;"></div><div style="margin: 0px auto; top: 0px; left: 0px; right: 0px; position: absolute; border: 1px solid rgb(204, 204, 204); z-index: 2000000000; background-color: rgb(255, 255, 255); overflow: hidden;"><iframe title="recaptcha challenge" src="./proximus_files/bframe.html" name="c-efyvs43l4mrf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" style="width: 100%; height: 100%;"></iframe></div></div><iframe sandbox="allow-scripts allow-same-origin" title="Adobe ID Syncing iFrame" id="destination_publishing_iframe_proximus_0" name="destination_publishing_iframe_proximus_0_name" src="./proximus_files/dest5.html" class="aamIframeLoaded" style="display: none; width: 0px; height: 0px;"></iframe><script>_satellite["_runScript22"](function(event, target, Promise) {
+!function(t,e,h,j,i,n){t.hj=t.hj||function(){(t.hj.q=t.hj.q||[]).push(arguments)},t._hjSettings={hjid:561467,hjsv:5},i=e.getElementsByTagName("head")[0],(n=e.createElement("script")).async=1,n.src=h+t._hjSettings.hjid+j+t._hjSettings.hjsv,i.appendChild(n)}(window,document,"//static.hotjar.com/c/hotjar-",".js?sv="),_satellite.logger.log("Loading HotJar ("+_hjSettings.hjid+")");
+});</script><script async="" defer="" src="./proximus_files/js(1)"></script><script src="./proximus_files/848344025228357" async=""></script><script async="" defer="" src="./proximus_files/fbevents.js.download"></script><cs-native-frame-holder hidden=""><iframe id="cs-native-frame" hidden="" title="Intentionally blank" src="./proximus_files/saved_resource(2).html"></iframe></cs-native-frame-holder><iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" id="_hjRemoteVarsFrame" src="./proximus_files/box-25a418976ea02a6f393fbbe77cec94bb.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe></body></html>
